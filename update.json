@@ -455,6 +455,26 @@
   "mod": {
     "releases": [
       {
+        "version": "1.8.7.02",
+        "tag": "v1.8.7.02",
+        "minResourceVersion": "1.0.0",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelog": "优化❝资源包 Tag 统一使用 vX.Y.Z，移除重复维护的 versionCode，按版本号与双向最低版本要求选择兼容资源。\n修复❝资源发布通知只合并已有的 update.json，缺失的频道跳过，保留已有 MOD、代理和其他配置。",
+        "changelogs": {
+          "zh-cn": "优化❝资源包 Tag 统一使用 vX.Y.Z，移除重复维护的 versionCode，按版本号与双向最低版本要求选择兼容资源。\n修复❝资源发布通知只合并已有的 update.json，缺失的频道跳过，保留已有 MOD、代理和其他配置。",
+          "en-us": "Optimized❝Resource tags now use vX.Y.Z without a separate versionCode; compatible resources are selected by numeric versions and minimum version requirements in both directions.\nFixed❝Resource publication notifications merge only existing update.json files, skip missing channels, and preserve MOD records, proxies and other settings.",
+          "ko-kr": "개선❝리소스 태그를 vX.Y.Z로 통일하고 중복 관리하던 versionCode를 제거했습니다. 숫자 버전과 양방향 최소 버전 조건으로 호환 리소스를 선택합니다.\n수정❝리소스 배포 알림은 기존 update.json만 병합하고 파일이 없는 채널은 건너뛰며, 기존 MOD 기록과 프록시 및 기타 설정을 유지합니다."
+        },
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 340942,
+            "sha256": "8c90674487217d5f5645e8cfec53eed9fd5e2ee97842c6b6415115b6a4e7dc5d"
+          }
+        ]
+      },
+      {
         "version": "1.8.7.01",
         "tag": "v1.8.7.01",
         "minResourceVersion": "1.0.0",
