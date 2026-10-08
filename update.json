@@ -455,6 +455,26 @@
   "mod": {
     "releases": [
       {
+        "version": "1.8.7.04",
+        "tag": "v1.8.7.04",
+        "minResourceVersion": "1.0.0",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelog": "修复❝资源统一安装到 OC2HostUtilities/Resources，不再随 MOD 版本目录变化。\n修复❝MOD 安装路径异常时先退出修复，重启后才检查和下载资源，并明确提示修复流程。\n修复❝弹窗复用时部分按钮文字出现多余双引号。\n优化❝扩大弹窗正文和滚动区域的显示宽度，保持字号和边缘留白。",
+        "changelogs": {
+          "zh-cn": "修复❝资源统一安装到 OC2HostUtilities/Resources，不再随 MOD 版本目录变化。\n修复❝MOD 安装路径异常时先退出修复，重启后才检查和下载资源，并明确提示修复流程。\n修复❝弹窗复用时部分按钮文字出现多余双引号。\n优化❝扩大弹窗正文和滚动区域的显示宽度，保持字号和边缘留白。",
+          "en-us": "Fixed❝Resources now install in OC2HostUtilities/Resources, shared across MOD version folders.\nFixed❝Incorrect MOD paths are repaired after exit; resources are checked and downloaded only after restarting, with clearer repair messages.\nFixed❝Removed extra quotation marks from some buttons when dialogs are reused.\nOptimized❝Widened dialog text and scroll areas while preserving font size and edge spacing.",
+          "ko-kr": "수정❝리소스를 MOD 버전 폴더와 관계없이 OC2HostUtilities/Resources에 설치하도록 변경했습니다.\n수정❝MOD 설치 경로가 잘못된 경우 게임 종료 후 경로를 복구하고 재시작 후에만 리소스를 확인 및 다운로드하며, 복구 안내를 명확히 했습니다.\n수정❝대화창 재사용 시 일부 버튼에 불필요한 큰따옴표가 표시되는 문제를 해결했습니다.\n개선❝글자 크기와 가장자리 여백을 유지하면서 대화창 본문과 스크롤 영역의 표시 너비를 확대했습니다."
+        },
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 341174,
+            "sha256": "7b045d407b34201d8f8a85a50a5404419f005e030174c366bfe48d9bfc056314"
+          }
+        ]
+      },
+      {
         "version": "1.8.7.03",
         "tag": "v1.8.7.03",
         "minResourceVersion": "1.0.0",
