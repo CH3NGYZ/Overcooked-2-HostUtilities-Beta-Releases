@@ -603,6 +603,7 @@
     "version": "19.0",
     "url": "https://github.com/BepInEx/BepInEx.ConfigurationManager/releases/download/v19.0/BepInEx.ConfigurationManager_BepInEx5_v19.0.zip",
     "size": 84258,
-    "sha256": "eed83f6e6accbdd0c3771f3061a6ae05b979b9b9b8a00dead69aabc1bf5fe950"
+    "sha256": "eed83f6e6accbdd0c3771f3061a6ae05b979b9b9b8a00dead69aabc1bf5fe950",
+    "changelog": "# What's changed\r\n- IL2CPP - Upgrade to BepInEx6 be.785 (support games without legacy input)\r\n- Set KeyboardShortcut package as obsolete - remove it from your project and use KeyboardShortcut from BepInEx6 be.785+ instead\r\n- Added targetFrameworks to nuget package\r\n\r\n**Full Changelog**: https://github.com/BepInEx/BepInEx.ConfigurationManager/compare/v18.4.1...v19.0"
   }
 }
