@@ -455,6 +455,27 @@
   "mod": {
     "releases": [
       {
+        "version": "1.8.7.05",
+        "tag": "v1.8.7.05",
+        "minResourceVersion": "1.0.0",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelog": "修复❝MOD 弹窗关闭后恢复按钮本地化，避免原版退出、重开、设置及其他共享弹窗显示英文键名。\n优化❝更新日志仅显示高于当前 MOD 版本的最近最多五条记录，正确识别补零前后的同一版本。\n优化❝弹窗正文顶部增加半行留白，保持字号、滚动及原版弹窗布局。\n新增❝更新日志在索引提供发布时间时显示 UTC+8 时间。",
+        "changelogs": {
+          "zh-cn": "修复❝MOD 弹窗关闭后恢复按钮本地化，避免原版退出、重开、设置及其他共享弹窗显示英文键名。\n优化❝更新日志仅显示高于当前 MOD 版本的最近最多五条记录，正确识别补零前后的同一版本。\n优化❝弹窗正文顶部增加半行留白，保持字号、滚动及原版弹窗布局。\n新增❝更新日志在索引提供发布时间时显示 UTC+8 时间。",
+          "en-us": "Fixed❝Restore button localization after MOD dialogs close, preventing localization keys from appearing in native quit, restart, settings and other shared dialogs.\nOptimized❝Show only the latest five MOD release notes newer than the installed version, treating zero-padded versions as equal.\nOptimized❝Add half a line of space above dialog text while preserving font size, scrolling and native dialog layout.\nAdded❝Show UTC+8 publication times in release notes when provided by the update index.",
+          "ko-kr": "수정❝MOD 대화창을 닫은 뒤 버튼 현지화 상태를 복원하여 기본 게임의 종료, 재시작, 설정 등 공유 대화창에 영문 키가 표시되는 문제를 해결했습니다.\n개선❝현재 MOD 버전보다 새로운 업데이트 내역만 최근 최대 5개까지 표시하며, 앞자리 0으로 채운 버전을 동일한 버전으로 인식합니다.\n개선❝글자 크기, 스크롤 및 기본 대화창 배치를 유지하면서 본문 위에 반 줄의 여백을 추가했습니다.\n추가❝업데이트 색인에 게시 시간이 있으면 업데이트 내역에 UTC+8 시간을 표시합니다."
+        },
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 342487,
+            "sha256": "d5c6eb03d17743207ef5bf9041064a950f5cb252b57d5fa1f5eb162f3ab8fa55"
+          }
+        ],
+        "publishedAt": "2026-10-09T08:57:56Z"
+      },
+      {
         "version": "1.8.7.04",
         "tag": "v1.8.7.04",
         "minResourceVersion": "1.0.0",
@@ -472,7 +493,8 @@
             "size": 341174,
             "sha256": "7b045d407b34201d8f8a85a50a5404419f005e030174c366bfe48d9bfc056314"
           }
-        ]
+        ],
+        "publishedAt": "2026-10-08T19:51:11Z"
       },
       {
         "version": "1.8.7.03",
@@ -492,7 +514,8 @@
             "size": 340311,
             "sha256": "b3524ff923bee3952c99284201174fa1c9670870ae8ccee501e092ebeb6a636b"
           }
-        ]
+        ],
+        "publishedAt": "2026-10-08T17:40:18Z"
       },
       {
         "version": "1.8.7.02",
@@ -512,7 +535,8 @@
             "size": 340942,
             "sha256": "8c90674487217d5f5645e8cfec53eed9fd5e2ee97842c6b6415115b6a4e7dc5d"
           }
-        ]
+        ],
+        "publishedAt": "2026-10-08T14:13:08Z"
       },
       {
         "version": "1.8.7.01",
@@ -532,7 +556,8 @@
             "size": 341603,
             "sha256": "985115cf5c1ad29cb48216dca01eb97e80d40d72e9e7fc376ee714e16dd694f0"
           }
-        ]
+        ],
+        "publishedAt": "2026-10-08T13:17:38Z"
       }
     ]
   },
@@ -567,6 +592,7 @@
           "en-us": "The first independent resource package release, the built-in configuration manager has been removed, the resource package no longer contains the configuration manager, please install ConfigurationManager yourself, or configure it in the Kitchen MOD Manager.",
           "ko-kr": "첫 번째 독립 리소스 패키지 릴리스, 내장 구성 관리자가 제거되었으며 리소스 패키지에는 더 이상 구성 관리자가 포함되지 않습니다. ConfigurationManager를 직접 설치하거나 Kitchen MOD Manager에서 구성하십시오."
         },
+        "publishedAt": "2026-10-08T15:05:06Z",
         "changelogSha256": "91e8bcd286ecbee9f9bcc467e6c82ed851010df97230366db3ebbb07f4365adf",
         "changelogsSha256": "ff0283021da0406158114ecad8e62216906c342626ea30e9195ac0a0298263c1"
       }
