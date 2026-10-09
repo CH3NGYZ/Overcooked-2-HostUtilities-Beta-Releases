@@ -455,6 +455,27 @@
   "mod": {
     "releases": [
       {
+        "version": "1.8.7.08",
+        "tag": "v1.8.7.08",
+        "minResourceVersion": "1.0.0",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelog": "新增❝资源加载完成后，按在线索引指定的固定版本检测 ConfigurationManager。未安装或插件版本不一致时提示下载安装，支持 GitHub 自动竞速和完整大小/SHA256 校验。更新保留玩家配置与自制文件，失败回滚旧插件，安装后重启生效。版本以 DLL 的 BepInPlugin 属性为准。",
+        "changelogs": {
+          "zh-cn": "新增❝资源加载完成后，按在线索引指定的固定版本检测 ConfigurationManager。未安装或插件版本不一致时提示下载安装，支持 GitHub 自动竞速和完整大小/SHA256 校验。更新保留玩家配置与自制文件，失败回滚旧插件，安装后重启生效。版本以 DLL 的 BepInPlugin 属性为准。",
+          "en-us": "Added❝After resources load, check ConfigurationManager against the fixed version declared in the online index. Missing or different plugin versions prompt installation using automatic GitHub download racing with full size and SHA256 verification. Updates preserve player configuration and custom files, roll back the previous plugin on failure, and take effect after restarting. Versions are read from the DLL BepInPlugin attribute.",
+          "ko-kr": "추가❝리소스 로딩 후 온라인 목록에 지정된 ConfigurationManager 고정 버전을 확인합니다. 미설치 또는 플러그인 버전이 다르면 설치를 안내하고 GitHub 자동 다운로드 경쟁과 전체 크기 및 SHA256 검증을 사용합니다. 사용자 설정과 사용자 파일을 유지하며 실패 시 이전 플러그인을 복원합니다. 설치 후 게임을 재시작하면 적용되며 버전은 DLL의 BepInPlugin 속성에서 읽습니다."
+        },
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 348853,
+            "sha256": "c8ad923bed6eab82b11f1ee8e56156352ecfdb3d8c2e9df8210efdcf595b1d40"
+          }
+        ],
+        "publishedAt": "2026-10-09T11:43:33Z"
+      },
+      {
         "version": "1.8.7.07",
         "tag": "v1.8.7.07",
         "minResourceVersion": "1.0.0",
@@ -537,27 +558,6 @@
           }
         ],
         "publishedAt": "2026-10-08T19:51:11Z"
-      },
-      {
-        "version": "1.8.7.03",
-        "tag": "v1.8.7.03",
-        "minResourceVersion": "1.0.0",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelog": "修复❝Gitee 渠道改为按版本 Tag 直链下载 MOD 和资源包，避免 API 限流或浏览器验证导致无法更新。",
-        "changelogs": {
-          "zh-cn": "修复❝Gitee 渠道改为按版本 Tag 直链下载 MOD 和资源包，避免 API 限流或浏览器验证导致无法更新。",
-          "en-us": "Fixed❝Gitee now downloads MOD and resource packages directly by version tag, avoiding update failures caused by API rate limits or browser verification.",
-          "ko-kr": "수정❝Gitee 채널에서 버전 태그를 사용해 MOD와 리소스 패키지를 직접 다운로드하여 API 요청 제한이나 브라우저 인증으로 인한 업데이트 실패를 해결했습니다."
-        },
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 340311,
-            "sha256": "b3524ff923bee3952c99284201174fa1c9670870ae8ccee501e092ebeb6a636b"
-          }
-        ],
-        "publishedAt": "2026-10-08T17:40:18Z"
       }
     ]
   },
