@@ -455,6 +455,27 @@
   "mod": {
     "releases": [
       {
+        "version": "1.8.7.11",
+        "tag": "v1.8.7.11",
+        "minResourceVersion": "1.0.0",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelog": "修复❝关闭接收测试版 MOD 更新时，测试版 DLL 仍按自身通道检查资源包和 ConfigurationManager，单个通道获取失败不再跳过另一通道的可用资源。\n\n优化❝启动先检查 MOD 更新，有更新直接准备正确位置的新 DLL；没有更新才修复错误路径，将 DLL 移到 OC2HostUtilities 根目录。随后按即将生效的 MOD 版本检查兼容资源，并补装缺失的 ConfigurationManager，已有插件版本不一致时提示更新。全部准备完成后统一退出安装，最多只需重启一次。仅资源更新仍支持热加载；准备途中取消会保留原 DLL 和资源。",
+        "changelogs": {
+          "zh-cn": "修复❝关闭接收测试版 MOD 更新时，测试版 DLL 仍按自身通道检查资源包和 ConfigurationManager，单个通道获取失败不再跳过另一通道的可用资源。\n\n优化❝启动先检查 MOD 更新，有更新直接准备正确位置的新 DLL；没有更新才修复错误路径，将 DLL 移到 OC2HostUtilities 根目录。随后按即将生效的 MOD 版本检查兼容资源，并补装缺失的 ConfigurationManager，已有插件版本不一致时提示更新。全部准备完成后统一退出安装，最多只需重启一次。仅资源更新仍支持热加载；准备途中取消会保留原 DLL 和资源。",
+          "en-us": "Fixed❝Disabling Beta MOD updates no longer skips resource or ConfigurationManager checks for an installed Beta DLL. Checks still use its own channel, and a failed channel no longer hides resources available from the other required channel.\n\nImproved❝Check MOD updates first and stage the new DLL at the correct destination. Repair an incorrect DLL location into the OC2HostUtilities root only when no MOD update is available. Then select compatible resources for the MOD version that will take effect and install a missing ConfigurationManager; a different installed plugin version still prompts for an update. Prepare everything before one combined exit installation, requiring at most one restart. Resource-only updates still load live; cancelling preparation preserves the original DLL and resources.",
+          "ko-kr": "수정❝베타 MOD 업데이트 수신을 꺼도 설치된 베타 DLL은 자체 채널에서 리소스와 ConfigurationManager를 확인합니다. 한 채널의 조회 실패로 다른 필요한 채널에서 제공되는 리소스 확인을 건너뛰지 않습니다.\n\n개선❝시작 시 MOD 업데이트를 먼저 확인하고 새 DLL을 올바른 위치에 준비합니다. MOD 업데이트가 없을 때만 잘못된 DLL 위치를 OC2HostUtilities 루트로 복구합니다. 이후 적용될 MOD 버전에 맞는 리소스를 확인하고 누락된 ConfigurationManager를 함께 설치하며, 설치된 플러그인의 버전이 다르면 업데이트를 안내합니다. 모든 준비가 끝난 뒤 게임 종료 시 함께 설치하므로 최대 한 번의 재시작만 필요합니다. 리소스만 업데이트할 때는 실시간 적용을 유지하며, 준비 중 취소하면 기존 DLL과 리소스를 보존합니다."
+        },
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 351371,
+            "sha256": "d2a45e9b6b782714d0c5493db08213b731d88c786ed5665cecb30f38468ebba5"
+          }
+        ],
+        "publishedAt": "2026-10-09T13:57:50Z"
+      },
+      {
         "version": "1.8.7.10",
         "tag": "v1.8.7.10",
         "minResourceVersion": "1.0.0",
@@ -537,27 +558,6 @@
           }
         ],
         "publishedAt": "2026-10-09T10:57:18Z"
-      },
-      {
-        "version": "1.8.7.06",
-        "tag": "v1.8.7.06",
-        "minResourceVersion": "1.0.0",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelog": "新增❝刷分记录面板增加时间正序/倒序按钮，按记录时间排序，默认最新记录在前。切换排序时保留当前选中记录并返回列表顶部。",
-        "changelogs": {
-          "zh-cn": "新增❝刷分记录面板增加时间正序/倒序按钮，按记录时间排序，默认最新记录在前。切换排序时保留当前选中记录并返回列表顶部。",
-          "en-us": "Added❝Toggle ascending or descending time order in the Score Records panel. Newest records appear first by default; switching order preserves the selected record and scrolls the list to the top.",
-          "ko-kr": "추가❝점수 기록 패널에 기록 시간 오름차순/내림차순 버튼을 추가했습니다. 기본적으로 최신 기록부터 표시하며, 정렬 전환 시 선택한 기록을 유지하고 목록 맨 위로 이동합니다."
-        },
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 342334,
-            "sha256": "a1375f4accd1e1a60216d94db0a926f580bffa0bdc09152bc02abbfe11c80308"
-          }
-        ],
-        "publishedAt": "2026-10-09T10:12:22Z"
       }
     ]
   },
