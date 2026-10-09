@@ -455,6 +455,27 @@
   "mod": {
     "releases": [
       {
+        "version": "1.8.7.10",
+        "tag": "v1.8.7.10",
+        "minResourceVersion": "1.0.0",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelog": "修复❝稳定版与测试版更新索引独立检测，任一通道获取失败不再中止其他通道或丢弃已取得的更新结果。失败提示分别显示 Gitee/GitHub 平台的稳定版/测试版，不显示仓库名；确认后继续提示可用更新，全部失败时可继续游戏并手动重查。无 MOD 更新时仍按当前 DLL 通道检查资源。",
+        "changelogs": {
+          "zh-cn": "修复❝稳定版与测试版更新索引独立检测，任一通道获取失败不再中止其他通道或丢弃已取得的更新结果。失败提示分别显示 Gitee/GitHub 平台的稳定版/测试版，不显示仓库名；确认后继续提示可用更新，全部失败时可继续游戏并手动重查。无 MOD 更新时仍按当前 DLL 通道检查资源。",
+          "en-us": "Fixed❝Stable and Beta update indexes are checked independently. A failed channel no longer stops the other channel or discards available updates. Failure notices identify the Gitee/GitHub platform and Stable/Beta channel without repository names. Confirming continues to available updates; if all checks fail, you can keep playing and retry manually. Resource checks still use the installed DLL channel when no MOD update is available.",
+          "ko-kr": "수정❝정식 버전과 베타 버전의 업데이트 목록을 독립적으로 확인합니다. 한 채널의 조회 실패가 다른 채널의 확인을 중단하거나 이미 가져온 업데이트 결과를 버리지 않습니다. 오류 안내는 저장소 이름 대신 Gitee/GitHub 플랫폼과 정식/베타 채널을 표시합니다. 확인 후 사용 가능한 업데이트를 안내하며, 모두 실패해도 게임을 계속하고 수동으로 다시 확인할 수 있습니다. MOD 업데이트가 없으면 리소스는 현재 DLL 채널에서 확인합니다."
+        },
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 349789,
+            "sha256": "7f91acf86823fca4723ed8f27b0c3c646e1cf0579d6e286ed86864f9dac639e6"
+          }
+        ],
+        "publishedAt": "2026-10-09T12:48:58Z"
+      },
+      {
         "version": "1.8.7.09",
         "tag": "v1.8.7.09",
         "minResourceVersion": "1.0.0",
@@ -537,27 +558,6 @@
           }
         ],
         "publishedAt": "2026-10-09T10:12:22Z"
-      },
-      {
-        "version": "1.8.7.05",
-        "tag": "v1.8.7.05",
-        "minResourceVersion": "1.0.0",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelog": "修复❝MOD 弹窗关闭后恢复按钮本地化，避免原版退出、重开、设置及其他共享弹窗显示英文键名。\n优化❝更新日志仅显示高于当前 MOD 版本的最近最多五条记录，正确识别补零前后的同一版本。\n优化❝弹窗正文顶部增加半行留白，保持字号、滚动及原版弹窗布局。\n新增❝更新日志在索引提供发布时间时显示 UTC+8 时间。",
-        "changelogs": {
-          "zh-cn": "修复❝MOD 弹窗关闭后恢复按钮本地化，避免原版退出、重开、设置及其他共享弹窗显示英文键名。\n优化❝更新日志仅显示高于当前 MOD 版本的最近最多五条记录，正确识别补零前后的同一版本。\n优化❝弹窗正文顶部增加半行留白，保持字号、滚动及原版弹窗布局。\n新增❝更新日志在索引提供发布时间时显示 UTC+8 时间。",
-          "en-us": "Fixed❝Restore button localization after MOD dialogs close, preventing localization keys from appearing in native quit, restart, settings and other shared dialogs.\nOptimized❝Show only the latest five MOD release notes newer than the installed version, treating zero-padded versions as equal.\nOptimized❝Add half a line of space above dialog text while preserving font size, scrolling and native dialog layout.\nAdded❝Show UTC+8 publication times in release notes when provided by the update index.",
-          "ko-kr": "수정❝MOD 대화창을 닫은 뒤 버튼 현지화 상태를 복원하여 기본 게임의 종료, 재시작, 설정 등 공유 대화창에 영문 키가 표시되는 문제를 해결했습니다.\n개선❝현재 MOD 버전보다 새로운 업데이트 내역만 최근 최대 5개까지 표시하며, 앞자리 0으로 채운 버전을 동일한 버전으로 인식합니다.\n개선❝글자 크기, 스크롤 및 기본 대화창 배치를 유지하면서 본문 위에 반 줄의 여백을 추가했습니다.\n추가❝업데이트 색인에 게시 시간이 있으면 업데이트 내역에 UTC+8 시간을 표시합니다."
-        },
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 342487,
-            "sha256": "d5c6eb03d17743207ef5bf9041064a950f5cb252b57d5fa1f5eb162f3ab8fa55"
-          }
-        ],
-        "publishedAt": "2026-10-09T08:57:56Z"
       }
     ]
   },
