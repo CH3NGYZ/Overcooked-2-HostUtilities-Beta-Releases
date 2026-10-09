@@ -455,6 +455,27 @@
   "mod": {
     "releases": [
       {
+        "version": "1.8.7.07",
+        "tag": "v1.8.7.07",
+        "minResourceVersion": "1.0.0",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelog": "修复❝恢复“接收测试版更新”开关。开启后同时检查正式版和测试版，选择版本号更高的更新，测试版也能收到更高版本的正式版。关闭后，当前测试版将提示回归最新正式版，即使正式版版本号更低。切换开关自动重新检查，沿用原生更新提示、完整下载校验和退出安装流程，保留资源目录。",
+        "changelogs": {
+          "zh-cn": "修复❝恢复“接收测试版更新”开关。开启后同时检查正式版和测试版，选择版本号更高的更新，测试版也能收到更高版本的正式版。关闭后，当前测试版将提示回归最新正式版，即使正式版版本号更低。切换开关自动重新检查，沿用原生更新提示、完整下载校验和退出安装流程，保留资源目录。",
+          "en-us": "Fixed❝Restored the Receive Beta Updates toggle. When enabled, both stable and beta releases are checked and the newer version is offered, including newer stable releases for beta installations. When disabled, a beta installation offers the latest stable release even if its version number is lower. Changing the toggle triggers a new check. Native update dialogs, full download verification, exit installation, and resource preservation remain in use.",
+          "ko-kr": "수정❝베타 업데이트 받기 설정을 복원했습니다. 켜면 정식 및 베타 버전을 모두 확인하여 더 높은 버전의 업데이트를 제공하며, 베타 사용자도 더 높은 정식 버전을 받을 수 있습니다. 끄면 현재 베타 버전에서 최신 정식 버전으로 복귀하도록 안내하며, 버전 번호가 낮아도 가능합니다. 설정 변경 시 자동으로 다시 확인하고 기존 업데이트 창, 다운로드 검증, 게임 종료 후 설치를 사용하며 리소스 폴더를 유지합니다."
+        },
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 343906,
+            "sha256": "2ce6a48253aa7b3b2513d4c240596b4aed26f809a8f60abb9ce101945add6a54"
+          }
+        ],
+        "publishedAt": "2026-10-09T10:57:18Z"
+      },
+      {
         "version": "1.8.7.06",
         "tag": "v1.8.7.06",
         "minResourceVersion": "1.0.0",
@@ -537,27 +558,6 @@
           }
         ],
         "publishedAt": "2026-10-08T17:40:18Z"
-      },
-      {
-        "version": "1.8.7.02",
-        "tag": "v1.8.7.02",
-        "minResourceVersion": "1.0.0",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelog": "优化❝资源包 Tag 统一使用 vX.Y.Z，移除重复维护的 versionCode，按版本号与双向最低版本要求选择兼容资源。\n修复❝资源发布通知只合并已有的 update.json，缺失的频道跳过，保留已有 MOD、代理和其他配置。",
-        "changelogs": {
-          "zh-cn": "优化❝资源包 Tag 统一使用 vX.Y.Z，移除重复维护的 versionCode，按版本号与双向最低版本要求选择兼容资源。\n修复❝资源发布通知只合并已有的 update.json，缺失的频道跳过，保留已有 MOD、代理和其他配置。",
-          "en-us": "Optimized❝Resource tags now use vX.Y.Z without a separate versionCode; compatible resources are selected by numeric versions and minimum version requirements in both directions.\nFixed❝Resource publication notifications merge only existing update.json files, skip missing channels, and preserve MOD records, proxies and other settings.",
-          "ko-kr": "개선❝리소스 태그를 vX.Y.Z로 통일하고 중복 관리하던 versionCode를 제거했습니다. 숫자 버전과 양방향 최소 버전 조건으로 호환 리소스를 선택합니다.\n수정❝리소스 배포 알림은 기존 update.json만 병합하고 파일이 없는 채널은 건너뛰며, 기존 MOD 기록과 프록시 및 기타 설정을 유지합니다."
-        },
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 340942,
-            "sha256": "8c90674487217d5f5645e8cfec53eed9fd5e2ee97842c6b6415115b6a4e7dc5d"
-          }
-        ],
-        "publishedAt": "2026-10-08T14:13:08Z"
       }
     ]
   },
