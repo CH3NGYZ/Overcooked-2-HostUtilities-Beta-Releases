@@ -455,6 +455,27 @@
   "mod": {
     "releases": [
       {
+        "version": "1.8.7.06",
+        "tag": "v1.8.7.06",
+        "minResourceVersion": "1.0.0",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelog": "新增❝刷分记录面板增加时间正序/倒序按钮，按记录时间排序，默认最新记录在前。切换排序时保留当前选中记录并返回列表顶部。",
+        "changelogs": {
+          "zh-cn": "新增❝刷分记录面板增加时间正序/倒序按钮，按记录时间排序，默认最新记录在前。切换排序时保留当前选中记录并返回列表顶部。",
+          "en-us": "Added❝Toggle ascending or descending time order in the Score Records panel. Newest records appear first by default; switching order preserves the selected record and scrolls the list to the top.",
+          "ko-kr": "추가❝점수 기록 패널에 기록 시간 오름차순/내림차순 버튼을 추가했습니다. 기본적으로 최신 기록부터 표시하며, 정렬 전환 시 선택한 기록을 유지하고 목록 맨 위로 이동합니다."
+        },
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 342334,
+            "sha256": "a1375f4accd1e1a60216d94db0a926f580bffa0bdc09152bc02abbfe11c80308"
+          }
+        ],
+        "publishedAt": "2026-10-09T10:12:22Z"
+      },
+      {
         "version": "1.8.7.05",
         "tag": "v1.8.7.05",
         "minResourceVersion": "1.0.0",
@@ -537,27 +558,6 @@
           }
         ],
         "publishedAt": "2026-10-08T14:13:08Z"
-      },
-      {
-        "version": "1.8.7.01",
-        "tag": "v1.8.7.01",
-        "minResourceVersion": "1.0.0",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelog": "优化❝重构 MOD 与资源包独立更新流程，按 Steam 国家自动选择更新通道。\n新增❝杂项面板提供游戏设定入口，可打开原版设置菜单，打开时屏蔽本地操作且不暂停游戏。\n优化❝MOD 弹窗按正文高度调整，保持字号、空行和缩进，超长内容支持滚动。\n优化❝资源更新后重新加载语音包与聊天提示音，刷新音频缓存。\n修复❝配置面板的分区与条目按声明顺序显示，检查更新按钮回到 MOD 设置首项。",
-        "changelogs": {
-          "zh-cn": "优化❝重构 MOD 与资源包独立更新流程，按 Steam 国家自动选择更新通道。\n新增❝杂项面板提供游戏设定入口，可打开原版设置菜单，打开时屏蔽本地操作且不暂停游戏。\n优化❝MOD 弹窗按正文高度调整，保持字号、空行和缩进，超长内容支持滚动。\n优化❝资源更新后重新加载语音包与聊天提示音，刷新音频缓存。\n修复❝配置面板的分区与条目按声明顺序显示，检查更新按钮回到 MOD 设置首项。",
-          "en-us": "Optimized❝Reworked independent MOD and resource updates, selecting the update channel by Steam country.\nAdded❝Open native game settings from the miscellaneous panel, blocking local controls while keeping the game running.\nOptimized❝MOD dialogs adapt to text height, preserve font size, blank lines and indentation, and support scrolling for long messages.\nOptimized❝Reload voice packs and chat notification sounds after resource updates, refreshing audio caches.\nFixed❝Configuration categories and entries follow their declared order, with Check for Updates first in MOD Settings.",
-          "ko-kr": "개선❝MOD와 리소스의 독립 업데이트를 개편하고 Steam 국가에 따라 업데이트 경로를 자동 선택합니다.\n추가❝기타 패널에서 기본 게임 설정을 열 수 있으며, 설정 중에는 로컬 조작을 차단하고 게임은 계속 진행됩니다.\n개선❝MOD 대화창이 본문 높이에 맞춰 조정되며 글자 크기, 빈 줄과 들여쓰기를 유지하고 긴 내용은 스크롤할 수 있습니다.\n개선❝리소스 업데이트 후 음성 팩과 채팅 알림음을 다시 불러오고 오디오 캐시를 갱신합니다.\n수정❝설정 분류와 항목이 선언 순서대로 표시되며, 업데이트 확인 버튼이 모드 설정의 첫 항목에 배치됩니다."
-        },
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 341603,
-            "sha256": "985115cf5c1ad29cb48216dca01eb97e80d40d72e9e7fc376ee714e16dd694f0"
-          }
-        ],
-        "publishedAt": "2026-10-08T13:17:38Z"
       }
     ]
   },
