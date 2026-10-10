@@ -455,6 +455,27 @@
   "mod": {
     "releases": [
       {
+        "version": "1.8.7.13",
+        "tag": "v1.8.7.13",
+        "minResourceVersion": "1.0.0",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelog": "**兼容性提醒：若想保留现阶段与旧版 MOD 的互联能力，请暂时不要更新。此 Beta 已停用旧 170 协议；互联双方需升级至支持 171 的版本，姓名、语音状态、文字聊天等 MOD 同步功能才能互通。**\n\n重构：重写 MOD 互联框架，统一接入版本、姓名、额外信息、语音状态、文字聊天及玩法请求。移除旧应用层 ACK 和逐条重发逻辑，可靠传输交给游戏的 Steam 连接；入房和重连时同步当前状态，成员离开后集中清理，为后续同步功能提供统一接入标准。\n\n优化：加好友、Steam 聊天和前后切换已解锁厨师拆成独立功能，完整模式与刷分模式均可使用，不依赖换位或 MOD 互联握手，也不再因检测到 HostColor／DIYChef 而禁用上述功能。换位自身仍保留 HostColor 存在时的兼容保护。\n\n修复：修复退出观战后无法再次观战的问题；修复恢复默认换位后，姓名、号位与右上角延迟可能对应错乱的问题。\n\n其他：完整模式换位集中到成员管理面板；刷分模式不启用自定义面板及面板快捷键，仅保留主界面和街机大厅的换位按钮。顺带优化关卡出生分配、配置面板与资源更新提示、备份及退出清理，精简 Beta 发布正文和旧代码，保留无 MOD 客机所需的原版同步兼容逻辑。\n\nBeta 说明：已通过本地编译和桌面回归；此次互联与玩家菜单调整仍需实际游戏及双端联机验证，欢迎反馈。",
+        "changelogs": {
+          "zh-cn": "**兼容性提醒：若想保留现阶段与旧版 MOD 的互联能力，请暂时不要更新。此 Beta 已停用旧 170 协议；互联双方需升级至支持 171 的版本，姓名、语音状态、文字聊天等 MOD 同步功能才能互通。**\n\n重构：重写 MOD 互联框架，统一接入版本、姓名、额外信息、语音状态、文字聊天及玩法请求。移除旧应用层 ACK 和逐条重发逻辑，可靠传输交给游戏的 Steam 连接；入房和重连时同步当前状态，成员离开后集中清理，为后续同步功能提供统一接入标准。\n\n优化：加好友、Steam 聊天和前后切换已解锁厨师拆成独立功能，完整模式与刷分模式均可使用，不依赖换位或 MOD 互联握手，也不再因检测到 HostColor／DIYChef 而禁用上述功能。换位自身仍保留 HostColor 存在时的兼容保护。\n\n修复：修复退出观战后无法再次观战的问题；修复恢复默认换位后，姓名、号位与右上角延迟可能对应错乱的问题。\n\n其他：完整模式换位集中到成员管理面板；刷分模式不启用自定义面板及面板快捷键，仅保留主界面和街机大厅的换位按钮。顺带优化关卡出生分配、配置面板与资源更新提示、备份及退出清理，精简 Beta 发布正文和旧代码，保留无 MOD 客机所需的原版同步兼容逻辑。\n\nBeta 说明：已通过本地编译和桌面回归；此次互联与玩家菜单调整仍需实际游戏及双端联机验证，欢迎反馈。",
+          "en-us": "**Compatibility warning: To keep your current MOD interoperability with older versions, please do not update yet. This Beta drops protocol 170. Both sides must use a version that supports protocol 171 for player names, voice status, text chat and other MOD synchronization features to work together.**\n\nReworked: Rebuilt the MOD synchronization framework with a common interface for version reports, player names, extra information, voice status, text chat and gameplay requests. Removed the application-level ACK and per-message retry logic, relying on the game's Steam connection for reliable transport. Joining and reconnecting synchronize current state, while leaving clears session data through a shared path, with a common integration standard for future features.\n\nImproved: Add Friend, Steam Chat and previous/next unlocked chef selection are now independent features available in both full and score mode. They no longer depend on slot swapping or the MOD handshake, and detecting HostColor or DIYChef no longer disables these actions. Slot swapping retains its compatibility safeguard when HostColor is present.\n\nFixed: Fixed being unable to spectate again after leaving spectator mode. Also fixed player names, slot numbers and top-right latency values becoming mismatched after restoring the default slot order.\n\nOther: Full mode centralizes slot swapping in the member management panel. Score mode disables custom panels and their shortcuts, keeping slot-swap buttons only in the main-menu lobby and arcade lobby. Also refined level spawn assignment, configuration-panel and resource-update notices, backups and exit cleanup; simplified Beta release notes and legacy code while preserving native synchronization paths for clients without the MOD.\n\nBeta note: Local compilation and desktop regressions passed. The networking and player-menu changes still need in-game and two-client verification; feedback is welcome.",
+          "ko-kr": "**호환성 주의: 현재 구버전 MOD와의 연동 기능을 유지하려면 당분간 업데이트하지 마세요. 이번 베타는 기존 170 프로토콜을 지원하지 않습니다. 이름, 음성 상태, 텍스트 채팅 등의 MOD 동기화 기능을 사용하려면 양쪽 모두 171을 지원하는 버전으로 업데이트해야 합니다.**\n\n개편: 버전 보고, 플레이어 이름, 추가 정보, 음성 상태, 텍스트 채팅과 게임 기능 요청을 공통 구조로 통합하여 MOD 연동 프레임워크를 다시 구현했습니다. 애플리케이션 계층 ACK와 메시지별 재전송 로직을 제거하고 게임의 Steam 연결을 통해 신뢰성 있는 전송을 처리합니다. 방 입장과 재연결 시 현재 상태를 동기화하고, 퇴장 시 세션 데이터를 한곳에서 정리하며 향후 동기화 기능을 위한 공통 연동 기준을 마련했습니다.\n\n개선: 친구 추가, Steam 채팅, 이전·다음 잠금 해제된 요리사 선택을 독립 기능으로 분리했습니다. 일반 모드와 점수 모드에서 모두 사용할 수 있으며, 자리 변경이나 MOD 연동 핸드셰이크에 의존하지 않습니다. HostColor 또는 DIYChef가 감지되어도 이 기능들은 비활성화되지 않습니다. 자리 변경에는 HostColor 사용 시 기존 호환성 보호를 유지합니다.\n\n수정: 관전 종료 후 다시 관전할 수 없던 문제를 수정했습니다. 기본 자리 배치로 복원한 뒤 플레이어 이름, 자리 번호와 우측 상단 지연 시간이 서로 어긋날 수 있던 문제도 수정했습니다.\n\n기타: 일반 모드의 자리 변경은 멤버 관리 패널로 통합했습니다. 점수 모드에서는 사용자 정의 패널과 패널 단축키를 비활성화하고 메인 메뉴 로비와 아케이드 로비의 자리 변경 버튼만 유지합니다. 이와 함께 스테이지 생성 위치 배정, 설정 패널 및 리소스 업데이트 안내, 백업과 종료 후 정리를 개선하고 베타 출시 설명과 기존 코드를 간소화했습니다. MOD가 없는 클라이언트에 필요한 기본 게임 동기화 호환 로직은 유지합니다.\n\n베타 안내: 로컬 컴파일과 데스크톱 회귀 테스트를 통과했습니다. 이번 연동 및 플레이어 메뉴 변경은 실제 게임과 두 클라이언트 환경에서 추가 검증이 필요하며, 피드백을 환영합니다."
+        },
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 326653,
+            "sha256": "512689e0b54dbe60dbd736268f67d9ad4b67a761766abf14447624fb1cc7e305"
+          }
+        ],
+        "publishedAt": "2026-10-10T19:54:27Z"
+      },
+      {
         "version": "1.8.7.12",
         "tag": "v1.8.7.12",
         "minResourceVersion": "1.0.0",
@@ -537,27 +558,6 @@
           }
         ],
         "publishedAt": "2026-10-09T12:18:41Z"
-      },
-      {
-        "version": "1.8.7.08",
-        "tag": "v1.8.7.08",
-        "minResourceVersion": "1.0.0",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelog": "新增❝资源加载完成后，按在线索引指定的固定版本检测 ConfigurationManager。未安装或插件版本不一致时提示下载安装，支持 GitHub 自动竞速和完整大小/SHA256 校验。更新保留玩家配置与自制文件，失败回滚旧插件，安装后重启生效。版本以 DLL 的 BepInPlugin 属性为准。",
-        "changelogs": {
-          "zh-cn": "新增❝资源加载完成后，按在线索引指定的固定版本检测 ConfigurationManager。未安装或插件版本不一致时提示下载安装，支持 GitHub 自动竞速和完整大小/SHA256 校验。更新保留玩家配置与自制文件，失败回滚旧插件，安装后重启生效。版本以 DLL 的 BepInPlugin 属性为准。",
-          "en-us": "Added❝After resources load, check ConfigurationManager against the fixed version declared in the online index. Missing or different plugin versions prompt installation using automatic GitHub download racing with full size and SHA256 verification. Updates preserve player configuration and custom files, roll back the previous plugin on failure, and take effect after restarting. Versions are read from the DLL BepInPlugin attribute.",
-          "ko-kr": "추가❝리소스 로딩 후 온라인 목록에 지정된 ConfigurationManager 고정 버전을 확인합니다. 미설치 또는 플러그인 버전이 다르면 설치를 안내하고 GitHub 자동 다운로드 경쟁과 전체 크기 및 SHA256 검증을 사용합니다. 사용자 설정과 사용자 파일을 유지하며 실패 시 이전 플러그인을 복원합니다. 설치 후 게임을 재시작하면 적용되며 버전은 DLL의 BepInPlugin 속성에서 읽습니다."
-        },
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 348853,
-            "sha256": "c8ad923bed6eab82b11f1ee8e56156352ecfdb3d8c2e9df8210efdcf595b1d40"
-          }
-        ],
-        "publishedAt": "2026-10-09T11:43:33Z"
       }
     ]
   },
