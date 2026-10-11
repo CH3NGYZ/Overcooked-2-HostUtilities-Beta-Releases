@@ -455,6 +455,27 @@
   "mod": {
     "releases": [
       {
+        "version": "1.8.7.14",
+        "tag": "v1.8.7.14",
+        "minResourceVersion": "1.0.0",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelog": "修复❝按 DIYLevel 房间归属隔离强制主客机、房间参数、观战容量和优先 MOD 搜索回退，避免本 MOD 改写 DIY 房间。\n修复❝主机一键退出保留房间现有成员，加载中立即提交返回餐车请求，主菜单支持重新加载；重开与退出共用门禁，避免重复提交。\n新增❝复制加入链接处提供观战预授权链接，绑定房间与房主，十分钟有效且限用一次；普通加入链接保持原版格式，可通过浏览器加入。\n修复❝仅接纳获得授权的观战请求，不将普通第五名玩家转成观战，并加强取消、过期和失败后的状态清理；观战链接需在新版 MOD 的杂项面板粘贴加入。\n优化❝黑名单请求在正式接纳前拒绝；新版客机在同次自动搜索中跳过明确拒绝的房间，修复大厅左上角拒绝与自动踢人提示。\n调整❝继续使用 171 互联协议，与旧 170 不互通；普通玩家加入保留无 MOD 兼容，主机不能强制停止无 MOD 客机自主重试。\n调整❝本 Beta 的加载恢复及观战、黑名单行为仍需实际游戏和双端联机验证；Unity 主线程或原生加载完全卡死时，快捷退出仍可能无法恢复。",
+        "changelogs": {
+          "zh-cn": "修复❝按 DIYLevel 房间归属隔离强制主客机、房间参数、观战容量和优先 MOD 搜索回退，避免本 MOD 改写 DIY 房间。\n修复❝主机一键退出保留房间现有成员，加载中立即提交返回餐车请求，主菜单支持重新加载；重开与退出共用门禁，避免重复提交。\n新增❝复制加入链接处提供观战预授权链接，绑定房间与房主，十分钟有效且限用一次；普通加入链接保持原版格式，可通过浏览器加入。\n修复❝仅接纳获得授权的观战请求，不将普通第五名玩家转成观战，并加强取消、过期和失败后的状态清理；观战链接需在新版 MOD 的杂项面板粘贴加入。\n优化❝黑名单请求在正式接纳前拒绝；新版客机在同次自动搜索中跳过明确拒绝的房间，修复大厅左上角拒绝与自动踢人提示。\n调整❝继续使用 171 互联协议，与旧 170 不互通；普通玩家加入保留无 MOD 兼容，主机不能强制停止无 MOD 客机自主重试。\n调整❝本 Beta 的加载恢复及观战、黑名单行为仍需实际游戏和双端联机验证；Unity 主线程或原生加载完全卡死时，快捷退出仍可能无法恢复。",
+          "en-us": "Fixed❝Isolated force-host/client behavior, room parameters, spectator capacity and MOD-first search fallback by DIYLevel room ownership, preventing this MOD from rewriting DIY rooms.\nFixed❝Host quick exit preserves existing room members, immediately submits a return to the van while loading and supports reloading the main menu. Restart and exit share a guard against duplicate requests.\nAdded❝Copy Join Link now offers spectator authorization links bound to the room and host, valid for ten minutes and one use. Player links keep the native format and support joining through a browser.\nFixed❝Only authorized spectator requests are accepted; an ordinary fifth player is never converted into a spectator. Improved cancellation, expiry and failure cleanup. Spectator links must be pasted into Miscellaneous in the new MOD.\nOptimized❝Blacklist requests are refused before admission. New MOD clients skip explicitly refused rooms during the same automatic search, and the lobby's top-left refusal and auto-kick notices are corrected.\nAdjusted❝Protocol 171 remains in use and cannot interoperate with legacy 170. Player joining retains support for clients without the MOD; hosts cannot force those clients to stop initiating retries.\nAdjusted❝Loading recovery, spectating and blacklist behavior in this Beta still need in-game and two-client verification. Quick exit may not recover a complete freeze of Unity's main thread or native loading.",
+          "ko-kr": "수정❝DIYLevel 방의 소유권에 따라 호스트·클라이언트 강제 설정, 방 매개변수, 관전 인원과 MOD 우선 검색의 재시도를 분리하여 이 MOD가 DIY 방을 변경하지 않도록 했습니다.\n수정❝호스트의 빠른 나가기는 기존 방 멤버를 유지하며 로딩 중 즉시 푸드트럭 복귀를 요청하고 메인 메뉴를 다시 로드할 수 있습니다. 재시작과 나가기는 공통 제어로 중복 요청을 방지합니다.\n추가❝초대 링크 복사에서 방과 호스트에 연결된 관전 권한 링크를 생성할 수 있습니다. 10분 동안 유효하며 한 번만 사용할 수 있습니다. 일반 참가 링크는 기본 형식을 유지하여 브라우저로 참가할 수 있습니다.\n수정❝권한이 있는 관전 요청만 허용하며 일반 다섯 번째 플레이어를 관전자로 전환하지 않습니다. 취소, 만료 및 실패 후 상태 정리를 강화했습니다. 관전 링크는 새 MOD의 기타 패널에 붙여 넣어 참가해야 합니다.\n개선❝블랙리스트 참가 요청을 정식 수락 전에 거부합니다. 새 MOD 클라이언트는 같은 자동 검색에서 명시적으로 거부된 방을 건너뛰며 로비 좌측 상단의 거부 및 자동 추방 안내를 수정했습니다.\n조정❝171 연동 프로토콜을 계속 사용하며 기존 170과는 연동되지 않습니다. 일반 참가에는 MOD 없는 클라이언트 호환성을 유지하지만 호스트가 해당 클라이언트의 자발적인 재시도를 강제로 중단할 수는 없습니다.\n조정❝이번 베타의 로딩 복구, 관전 및 블랙리스트 동작은 실제 게임과 두 클라이언트 환경에서 추가 검증이 필요합니다. Unity 메인 스레드나 네이티브 로딩이 완전히 멈춘 경우 빠른 나가기로 복구되지 않을 수 있습니다."
+        },
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 337229,
+            "sha256": "e0c27e7baafc94c9a6e3b774dae06a2955da6045ac31274ba64a047bdf9e296d"
+          }
+        ],
+        "publishedAt": "2026-10-11T03:43:32Z"
+      },
+      {
         "version": "1.8.7.13",
         "tag": "v1.8.7.13",
         "minResourceVersion": "1.0.0",
@@ -537,27 +558,6 @@
           }
         ],
         "publishedAt": "2026-10-09T12:48:58Z"
-      },
-      {
-        "version": "1.8.7.09",
-        "tag": "v1.8.7.09",
-        "minResourceVersion": "1.0.0",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelog": "修复❝启动时获取更新索引或 Steam 地区失败，也会在菜单就绪后显示原生提示，不再只记录日志。确认后可继续游戏，手动重新检查失败时同样提示；保留路径修复优先和不回退 Release API 的行为。",
-        "changelogs": {
-          "zh-cn": "修复❝启动时获取更新索引或 Steam 地区失败，也会在菜单就绪后显示原生提示，不再只记录日志。确认后可继续游戏，手动重新检查失败时同样提示；保留路径修复优先和不回退 Release API 的行为。",
-          "en-us": "Fixed❝When the update index or Steam region is unavailable during startup, a native notice now appears once the menu is ready instead of only logging a warning. Confirming allows continued play; failed manual checks also show the notice. DLL path repair retains priority, and no Release API fallback is introduced.",
-          "ko-kr": "수정❝시작 시 업데이트 목록 또는 Steam 지역 정보를 가져오지 못하면 로그만 남기는 대신 메뉴가 준비된 후 기본 안내 창을 표시합니다. 확인 후 게임을 계속할 수 있으며 수동 확인 실패 시에도 안내합니다. DLL 경로 복구 우선순위와 Release API로 대체하지 않는 동작을 유지합니다."
-        },
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 348925,
-            "sha256": "b90479edc1b2bfa4d9f639ca367a87b91836382472fd8ebbd9d0f7fcc2be641c"
-          }
-        ],
-        "publishedAt": "2026-10-09T12:18:41Z"
       }
     ]
   },
