@@ -455,6 +455,27 @@
   "mod": {
     "releases": [
       {
+        "version": "1.8.7.16",
+        "tag": "v1.8.7.16",
+        "minResourceVersion": "1.0.0",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelog": "修复❝观战邀请失败时可能卡在\"正在加入\"状态的问题，现在会正确关闭等待窗口。\n修复❝观战成员离开后没有清理干净的问题，避免旧连接影响新的观战。\n修复❝观战邀请错误时可能同时显示多个提示的问题，现在只显示一条清晰的错误原因。\n调整❝观战链接改为10分钟内可重复使用，方便重试加入。\n调整❝有观战者时房主不会自动切换为客机，保持房间稳定。\n优化❝观战者在右上角独立显示，不占用厨师位置。\n优化❝客机离开房间更快，加载界面和计分界面也能立即退出。\n调整❝ConfigurationManager 只在未安装时提示，已安装就不再提示更新。\n调整❝更新失败时会显示具体原因，方便排查问题。\n调整❝简化了控制台日志的显示格式。\n修复❝多个 ConfigurationManager DLL 共存时可能导致更新检测失败的问题。\n优化❝下载弹窗新增百分比进度，按“进度，已下载/总量，速度”的顺序显示。",
+        "changelogs": {
+          "zh-cn": "修复❝观战邀请失败时可能卡在\"正在加入\"状态的问题，现在会正确关闭等待窗口。\n修复❝观战成员离开后没有清理干净的问题，避免旧连接影响新的观战。\n修复❝观战邀请错误时可能同时显示多个提示的问题，现在只显示一条清晰的错误原因。\n调整❝观战链接改为10分钟内可重复使用，方便重试加入。\n调整❝有观战者时房主不会自动切换为客机，保持房间稳定。\n优化❝观战者在右上角独立显示，不占用厨师位置。\n优化❝客机离开房间更快，加载界面和计分界面也能立即退出。\n调整❝ConfigurationManager 只在未安装时提示，已安装就不再提示更新。\n调整❝更新失败时会显示具体原因，方便排查问题。\n调整❝简化了控制台日志的显示格式。\n修复❝多个 ConfigurationManager DLL 共存时可能导致更新检测失败的问题。\n优化❝下载弹窗新增百分比进度，按“进度，已下载/总量，速度”的顺序显示。",
+          "en-us": "Fixed❝Spectator invitation failures getting stuck in \"joining\" state - now properly closes the waiting dialog.\nFixed❝Spectator departure cleanup issues - old connections no longer affect new spectator sessions.\nFixed❝Multiple error messages appearing for spectator invitation errors - now shows one clear failure reason.\nAdjusted❝Spectator links valid for 10 minutes for easier retry.\nAdjusted❝Host with spectators won't auto-switch to client mode, keeping the room stable.\nOptimized❝Spectators displayed separately in overlay, not taking up chef slots.\nOptimized❝Clients quit rooms faster, including from loading screens and score screens.\nAdjusted❝ConfigurationManager only prompts when missing - no update prompts if already installed.\nAdjusted❝Update failures show specific reasons for easier troubleshooting.\nAdjusted❝Simplified console log formatting.\nFixed❝Update checks failing when multiple ConfigurationManager DLLs are installed.\nOptimized❝Download dialogs now show percentage first, followed by downloaded/total size and speed.",
+          "ko-kr": "수정❝관전 초대 실패 시 \"참가 중\" 상태로 멈추는 문제 - 대기창이 제대로 닫힙니다.\n수정❝관전자 퇴장 후 정리 문제 - 이전 연결이 새 관전 세션에 영향을 주지 않습니다.\n수정❝관전 초대 오류 시 여러 메시지가 표시되는 문제 - 명확한 실패 이유 하나만 표시합니다.\n조정❝관전 링크 유효 기간을 10분으로 변경하여 재시도가 쉬워졌습니다.\n조정❝관전자가 있을 때 호스트가 자동으로 클라이언트 모드로 전환되지 않아 방이 안정적입니다.\n최적화❝관전자가 오버레이에서 별도로 표시되어 요리사 슬롯을 차지하지 않습니다.\n최적화❝클라이언트가 방에서 더 빠르게 나가며, 로딩 화면과 점수 화면에서도 즉시 나갈 수 있습니다.\n조정❝ConfigurationManager는 누락된 경우에만 안내 - 이미 설치되어 있으면 업데이트 안내 없음.\n조정❝업데이트 실패 시 구체적인 이유를 표시하여 문제 해결이 쉬워졌습니다.\n조정❞콘솔 로그 형식이 간소화되었습니다.\n수정❝ConfigurationManager DLL이 여러 개 설치된 경우 업데이트 확인이 실패할 수 있는 문제를 해결했습니다.\n최적화❝다운로드 창에 백분율 진행률을 추가하고 진행률, 다운로드한 크기/전체 크기, 속도 순으로 표시합니다."
+        },
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 360552,
+            "sha256": "54d42944d94ea1538a4d8676dc4d936f1668662f09a72b7e6264525ca1aae270"
+          }
+        ],
+        "publishedAt": "2026-10-14T09:20:25Z"
+      },
+      {
         "version": "1.8.7.15",
         "tag": "v1.8.7.15",
         "minResourceVersion": "1.0.0",
@@ -537,27 +558,6 @@
           }
         ],
         "publishedAt": "2026-10-09T14:42:21Z"
-      },
-      {
-        "version": "1.8.7.11",
-        "tag": "v1.8.7.11",
-        "minResourceVersion": "1.0.0",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelog": "修复❝关闭接收测试版 MOD 更新时，测试版 DLL 仍按自身通道检查资源包和 ConfigurationManager，单个通道获取失败不再跳过另一通道的可用资源。\n\n优化❝启动先检查 MOD 更新，有更新直接准备正确位置的新 DLL；没有更新才修复错误路径，将 DLL 移到 OC2HostUtilities 根目录。随后按即将生效的 MOD 版本检查兼容资源，并补装缺失的 ConfigurationManager，已有插件版本不一致时提示更新。全部准备完成后统一退出安装，最多只需重启一次。仅资源更新仍支持热加载；准备途中取消会保留原 DLL 和资源。",
-        "changelogs": {
-          "zh-cn": "修复❝关闭接收测试版 MOD 更新时，测试版 DLL 仍按自身通道检查资源包和 ConfigurationManager，单个通道获取失败不再跳过另一通道的可用资源。\n\n优化❝启动先检查 MOD 更新，有更新直接准备正确位置的新 DLL；没有更新才修复错误路径，将 DLL 移到 OC2HostUtilities 根目录。随后按即将生效的 MOD 版本检查兼容资源，并补装缺失的 ConfigurationManager，已有插件版本不一致时提示更新。全部准备完成后统一退出安装，最多只需重启一次。仅资源更新仍支持热加载；准备途中取消会保留原 DLL 和资源。",
-          "en-us": "Fixed❝Disabling Beta MOD updates no longer skips resource or ConfigurationManager checks for an installed Beta DLL. Checks still use its own channel, and a failed channel no longer hides resources available from the other required channel.\n\nImproved❝Check MOD updates first and stage the new DLL at the correct destination. Repair an incorrect DLL location into the OC2HostUtilities root only when no MOD update is available. Then select compatible resources for the MOD version that will take effect and install a missing ConfigurationManager; a different installed plugin version still prompts for an update. Prepare everything before one combined exit installation, requiring at most one restart. Resource-only updates still load live; cancelling preparation preserves the original DLL and resources.",
-          "ko-kr": "수정❝베타 MOD 업데이트 수신을 꺼도 설치된 베타 DLL은 자체 채널에서 리소스와 ConfigurationManager를 확인합니다. 한 채널의 조회 실패로 다른 필요한 채널에서 제공되는 리소스 확인을 건너뛰지 않습니다.\n\n개선❝시작 시 MOD 업데이트를 먼저 확인하고 새 DLL을 올바른 위치에 준비합니다. MOD 업데이트가 없을 때만 잘못된 DLL 위치를 OC2HostUtilities 루트로 복구합니다. 이후 적용될 MOD 버전에 맞는 리소스를 확인하고 누락된 ConfigurationManager를 함께 설치하며, 설치된 플러그인의 버전이 다르면 업데이트를 안내합니다. 모든 준비가 끝난 뒤 게임 종료 시 함께 설치하므로 최대 한 번의 재시작만 필요합니다. 리소스만 업데이트할 때는 실시간 적용을 유지하며, 준비 중 취소하면 기존 DLL과 리소스를 보존합니다."
-        },
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 351371,
-            "sha256": "d2a45e9b6b782714d0c5493db08213b731d88c786ed5665cecb30f38468ebba5"
-          }
-        ],
-        "publishedAt": "2026-10-09T13:57:50Z"
       }
     ]
   },
