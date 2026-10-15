@@ -455,6 +455,27 @@
   "mod": {
     "releases": [
       {
+        "minResourceVersion": "1.0.0",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelog": "修复❝统一玩家菜单按钮布局与交互，修复换厨师箭头鼠标点击后消失、键盘焦点回落及按钮重叠；切换厨师时仅保留左右箭头，中间空位保持三分之一宽度。\n改进❝普通模式和刷分模式均支持主界面餐车左右换位，换位行采用左右箭头和中间当前号位；统一创建房间、复制邀请链接按钮交互，并修复街机大厅换位后的焦点保持。\n修复❝玩家菜单展开或更换厨师后，再次点击姓名名牌可正常收起菜单。\n改进❝剪贴板加入提示支持从含姓名、招募信息等混合文本中提取 Steam 大厅链接，归一化后去重，避免相同链接因文案变化重复提示。\n修复❝黑名单拒绝加入提示仅统计本次显示周期内拒绝的玩家，不再累计整个游戏进程的记录。\n修复❝一键退出保留邀请加入及成员管理面板明确选择保留的玩家，正确清理街机和对战匹配加入者；空房退出时完整关闭原会话，避免残留房间连接。\n改进❝本 MOD 配置、刷分记录、历史玩家、黑名单、聊天与语音用户数据统一存放到 BepInEx/config/OC2HostUtilities；启动时自动创建目录、迁移旧文件并升级旧名单格式，保留备份和冲突文件，修复首次目录缺失导致初始化失败。\n改进❝游戏启动即开始等待 SteamID，最长等待 30 秒，取得有效身份后立即开始更新检测并启用相关功能，获取失败后可自动恢复；检测不等待存档加载，所有更新弹窗与导航门禁仅在 ByteLoad 和 StartScreen 前端显示完成后启用。",
+        "changelogs": {
+          "zh-cn": "修复❝统一玩家菜单按钮布局与交互，修复换厨师箭头鼠标点击后消失、键盘焦点回落及按钮重叠；切换厨师时仅保留左右箭头，中间空位保持三分之一宽度。\n改进❝普通模式和刷分模式均支持主界面餐车左右换位，换位行采用左右箭头和中间当前号位；统一创建房间、复制邀请链接按钮交互，并修复街机大厅换位后的焦点保持。\n修复❝玩家菜单展开或更换厨师后，再次点击姓名名牌可正常收起菜单。\n改进❝剪贴板加入提示支持从含姓名、招募信息等混合文本中提取 Steam 大厅链接，归一化后去重，避免相同链接因文案变化重复提示。\n修复❝黑名单拒绝加入提示仅统计本次显示周期内拒绝的玩家，不再累计整个游戏进程的记录。\n修复❝一键退出保留邀请加入及成员管理面板明确选择保留的玩家，正确清理街机和对战匹配加入者；空房退出时完整关闭原会话，避免残留房间连接。\n改进❝本 MOD 配置、刷分记录、历史玩家、黑名单、聊天与语音用户数据统一存放到 BepInEx/config/OC2HostUtilities；启动时自动创建目录、迁移旧文件并升级旧名单格式，保留备份和冲突文件，修复首次目录缺失导致初始化失败。\n改进❝游戏启动即开始等待 SteamID，最长等待 30 秒，取得有效身份后立即开始更新检测并启用相关功能，获取失败后可自动恢复；检测不等待存档加载，所有更新弹窗与导航门禁仅在 ByteLoad 和 StartScreen 前端显示完成后启用。",
+          "en-us": "Fixed❝Unified player-menu button layout and interaction, fixing chef arrows disappearing after mouse clicks, lost keyboard focus and overlapping buttons. Chef switching keeps only the side arrows visible while preserving the empty middle third.\nImproved❝Main-menu van slot controls work in both full and score modes, with side arrows and the current slot in the center. Room creation and invite-link copy buttons share consistent interaction, and arcade slot changes retain focus.\nFixed❝Clicking the nameplate again now closes an expanded player menu, including after changing chefs.\nImproved❝Clipboard join prompts extract Steam lobby links from mixed recruitment text and normalize them before deduplication, so changing surrounding text does not repeat a prompt for the same link.\nFixed❝Blacklist rejection notices show only players rejected during the current visible period, rather than accumulating the entire game session's history.\nFixed❝Quick exit keeps invited players and members explicitly marked to stay, while removing arcade and versus matchmaking arrivals. Exiting an empty room fully closes its previous session to avoid lingering connections.\nImproved❝MOD configuration, score records, player history, blacklists, chat and voice-user data now live under BepInEx/config/OC2HostUtilities. Startup creates the directory, migrates old files and upgrades legacy lists while preserving backups and conflicts; a missing first-run directory no longer interrupts initialization.\nImproved❝SteamID initialization begins at game startup and waits up to 30 seconds. A valid identity immediately starts update checks and enables dependent features, with automatic recovery after failure. Checks do not wait for profile loading; all update dialogs and navigation gates wait until ByteLoad and the StartScreen frontend finish.",
+          "ko-kr": "수정❝플레이어 메뉴 버튼의 배치와 조작을 통일하고, 요리사 화살표가 마우스 클릭 후 사라지거나 키보드 포커스를 잃는 문제와 버튼 겹침을 수정했습니다. 요리사 변경 중에는 좌우 화살표만 표시하며 가운데 3분의 1 공간을 유지합니다.\n개선❝일반 모드와 기록 모드 모두 메인 메뉴 푸드트럭에서 좌우 슬롯 이동을 지원하며, 가운데에 현재 슬롯 번호를 표시합니다. 방 생성과 초대 링크 복사 버튼의 조작을 통일하고 아케이드 슬롯 이동 후 포커스 유지를 수정했습니다.\n수정❝플레이어 메뉴를 펼치거나 요리사를 변경한 뒤 이름표를 다시 클릭하면 메뉴가 정상적으로 접힙니다.\n개선❝클립보드 참가 안내가 이름과 모집 문구가 섞인 텍스트에서도 Steam 로비 링크를 추출하고 정규화한 뒤 중복을 확인합니다. 주변 문구만 바뀐 같은 링크는 반복 안내하지 않습니다.\n수정❝블랙리스트 참가 거부 안내에 게임 실행 전체 기록 대신 현재 표시 기간에 거부한 플레이어만 표시합니다.\n수정❝빠른 나가기 시 초대로 참가했거나 멤버 관리에서 명시적으로 유지한 플레이어는 남기고, 아케이드 및 대전 매칭 참가자는 올바르게 정리합니다. 빈 방에서 나갈 때 기존 세션을 완전히 종료해 연결이 남는 문제를 방지합니다.\n개선❝MOD 설정, 점수 기록, 플레이어 이력, 블랙리스트, 채팅 및 음성 사용자 데이터를 BepInEx/config/OC2HostUtilities에 통합했습니다. 시작 시 폴더 생성, 기존 파일 이전과 구형 목록 형식 변환을 수행하며 백업과 충돌 파일을 보존합니다. 최초 실행 시 폴더가 없어 초기화가 중단되는 문제도 수정했습니다.\n개선❝게임 시작 즉시 SteamID를 최대 30초 동안 기다리며, 유효한 ID를 받으면 바로 업데이트 확인과 관련 기능을 시작합니다. 실패 후 자동 복구도 지원합니다. 업데이트 확인은 프로필 로딩을 기다리지 않으며, 모든 업데이트 팝업과 메뉴 이동 제한만 ByteLoad 및 StartScreen 메뉴 표시가 끝난 뒤 적용됩니다."
+        },
+        "tag": "v1.8.7.19",
+        "version": "1.8.7.19",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 376928,
+            "sha256": "39f56cf8e34535940a932281a7ee2c37e612aee4e5237d967a32e7762bcb1b62"
+          }
+        ],
+        "publishedAt": "2026-10-15T14:53:45Z"
+      },
+      {
         "version": "1.8.7.16",
         "tag": "v1.8.7.16",
         "minResourceVersion": "1.0.0",
@@ -537,27 +558,6 @@
           }
         ],
         "publishedAt": "2026-10-10T19:54:27Z"
-      },
-      {
-        "version": "1.8.7.12",
-        "tag": "v1.8.7.12",
-        "minResourceVersion": "1.0.0",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelog": "优化❝“接收测试版更新”开关即时检查更新：测试版关闭后提示最新正式版，可直接下载回归；正式版开启后提示前三段版本号相同的最新测试版，不再提示切换开关需重启。\n\n修复❝不同前三段的测试版不再作为正式版切换目标或混入更新日志。检测中修改开关会按最新设置重新检查；下载、备份确认及退出安装已准备时保留已接受的更新计划。",
-        "changelogs": {
-          "zh-cn": "优化❝“接收测试版更新”开关即时检查更新：测试版关闭后提示最新正式版，可直接下载回归；正式版开启后提示前三段版本号相同的最新测试版，不再提示切换开关需重启。\n\n修复❝不同前三段的测试版不再作为正式版切换目标或混入更新日志。检测中修改开关会按最新设置重新检查；下载、备份确认及退出安装已准备时保留已接受的更新计划。",
-          "en-us": "Improved❝Changing Receive Beta Updates checks updates immediately. Disabling it on a Beta installation offers the latest Stable release for download and return. Enabling it on Stable offers the latest Beta with the same first three version components, without a restart notice for changing the setting.\n\nFixed❝Beta releases with a different three-part base no longer appear as Stable-to-Beta targets or in their update notes. Changes during detection trigger a fresh check using the latest preference. Accepted update plans are preserved during download, backup confirmation and prepared exit installation.",
-          "ko-kr": "개선❝베타 업데이트 받기 설정을 변경하면 즉시 업데이트를 확인합니다. 베타에서 끄면 최신 정식 버전으로 다운로드하여 복귀할 수 있습니다. 정식 버전에서 켜면 앞 세 자리 버전 번호가 같은 최신 베타를 안내하며, 설정 변경을 위한 재시작 안내는 표시하지 않습니다.\n\n수정❝앞 세 자리 버전 번호가 다른 베타는 정식 버전에서 베타로 전환할 대상이나 업데이트 내역에 표시하지 않습니다. 확인 중 설정이 바뀌면 최신 설정으로 다시 확인합니다. 다운로드, 백업 확인 및 종료 설치 준비 중에는 이미 수락한 업데이트 계획을 유지합니다."
-        },
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 351201,
-            "sha256": "27e178946e3db40662ae8f345fb46276c59c8578f535e06ab4c44d9cef48457e"
-          }
-        ],
-        "publishedAt": "2026-10-09T14:42:21Z"
       }
     ]
   },
