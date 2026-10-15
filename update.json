@@ -455,6 +455,27 @@
   "mod": {
     "releases": [
       {
+        "minResourceVersion": "1.0.1",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelog": "优化代码",
+        "changelogs": {
+          "zh-cn": "优化代码",
+          "en-us": "Code optimizations.",
+          "ko-kr": "코드 최적화."
+        },
+        "tag": "v1.8.7.22",
+        "version": "1.8.7.22",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 377021,
+            "sha256": "20057716f5afaacd800baa9f5fe8363fe7d58a5db0d1617dce769d827c06d411"
+          }
+        ],
+        "publishedAt": "2026-10-15T19:31:18Z"
+      },
+      {
         "minResourceVersion": "1.0.0",
         "resourceFormat": 1,
         "forceUpdate": false,
@@ -537,27 +558,6 @@
           }
         ],
         "publishedAt": "2026-10-14T09:20:25Z"
-      },
-      {
-        "version": "1.8.7.15",
-        "tag": "v1.8.7.15",
-        "minResourceVersion": "1.0.0",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelog": "修复❝观战邀请失败时可能卡在\"正在加入\"状态的问题，现在会正确关闭等待窗口。\n修复❝观战成员离开后没有清理干净的问题，避免旧连接影响新的观战。\n修复❝观战邀请错误时可能同时显示多个提示的问题，现在只显示一条清晰的错误原因。\n调整❝观战链接改为10分钟内可重复使用，方便重试加入。\n调整❝有观战者时房主不会自动切换为客机，保持房间稳定。\n优化❝观战者在右上角独立显示，不占用厨师位置。\n优化❝客机离开房间更快，加载界面和计分界面也能立即退出。\n调整❝ConfigurationManager 只在未安装时提示，已安装就不再提示更新。\n调整❝更新失败时会显示具体原因，方便排查问题。\n调整❝简化了控制台日志的显示格式。",
-        "changelogs": {
-          "zh-cn": "修复❝观战邀请失败时可能卡在\"正在加入\"状态的问题，现在会正确关闭等待窗口。\n修复❝观战成员离开后没有清理干净的问题，避免旧连接影响新的观战。\n修复❝观战邀请错误时可能同时显示多个提示的问题，现在只显示一条清晰的错误原因。\n调整❝观战链接改为10分钟内可重复使用，方便重试加入。\n调整❝有观战者时房主不会自动切换为客机，保持房间稳定。\n优化❝观战者在右上角独立显示，不占用厨师位置。\n优化❝客机离开房间更快，加载界面和计分界面也能立即退出。\n调整❝ConfigurationManager 只在未安装时提示，已安装就不再提示更新。\n调整❝更新失败时会显示具体原因，方便排查问题。\n调整❝简化了控制台日志的显示格式。",
-          "en-us": "Fixed❝Spectator invitation failures getting stuck in \"joining\" state - now properly closes the waiting dialog.\nFixed❝Spectator departure cleanup issues - old connections no longer affect new spectator sessions.\nFixed❝Multiple error messages appearing for spectator invitation errors - now shows one clear failure reason.\nAdjusted❝Spectator links valid for 10 minutes for easier retry.\nAdjusted❝Host with spectators won't auto-switch to client mode, keeping the room stable.\nOptimized❝Spectators displayed separately in overlay, not taking up chef slots.\nOptimized❝Clients quit rooms faster, including from loading screens and score screens.\nAdjusted❝ConfigurationManager only prompts when missing - no update prompts if already installed.\nAdjusted❝Update failures show specific reasons for easier troubleshooting.\nAdjusted❝Simplified console log formatting.",
-          "ko-kr": "수정❝관전 초대 실패 시 \"참가 중\" 상태로 멈추는 문제 - 대기창이 제대로 닫힙니다.\n수정❝관전자 퇴장 후 정리 문제 - 이전 연결이 새 관전 세션에 영향을 주지 않습니다.\n수정❝관전 초대 오류 시 여러 메시지가 표시되는 문제 - 명확한 실패 이유 하나만 표시합니다.\n조정❝관전 링크 유효 기간을 10분으로 변경하여 재시도가 쉬워졌습니다.\n조정❝관전자가 있을 때 호스트가 자동으로 클라이언트 모드로 전환되지 않아 방이 안정적입니다.\n최적화❝관전자가 오버레이에서 별도로 표시되어 요리사 슬롯을 차지하지 않습니다.\n최적화❝클라이언트가 방에서 더 빠르게 나가며, 로딩 화면과 점수 화면에서도 즉시 나갈 수 있습니다.\n조정❝ConfigurationManager는 누락된 경우에만 안내 - 이미 설치되어 있으면 업데이트 안내 없음.\n조정❝업데이트 실패 시 구체적인 이유를 표시하여 문제 해결이 쉬워졌습니다.\n조정❞콘솔 로그 형식이 간소화되었습니다."
-        },
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 356394,
-            "sha256": "b83133d18e97cd6fd211b330ee2af3d05c49927718e2fba7544d84b4582d0a22"
-          }
-        ],
-        "publishedAt": "2026-10-11T21:43:47Z"
       }
     ]
   },
