@@ -464,6 +464,27 @@
           "ko-kr": "최적화❝MOD 자체 업데이트 절차를 개선했습니다. 게임 실행 중에 파일을 교체하고, 완료 후 게임을 종료하면 다음 실행부터 새 버전이 적용됩니다.",
           "ja-jp": "最適化❝MOD の自動更新フローを改善しました。ゲーム実行中にファイルを置き換え、完了後にゲームを終了すると次回起動から新しいバージョンが適用されます。"
         },
+        "tag": "v1.9.9-beta.2",
+        "version": "1.9.9.2",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 408448,
+            "sha256": "1bba854c9c40699ee23ffe73abde4fbe1a28c22afddf5db1ec5053d5a27103b3"
+          }
+        ],
+        "publishedAt": "2026-10-28T17:49:51Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelogs": {
+          "zh-cn": "优化❝MOD 自更新流程：更新在游戏运行中完成文件替换，完成后提示关闭游戏，重启后生效。",
+          "en-us": "Optimized❝The MOD self-update flow now replaces files while the game is running, then asks you to close the game so the new version loads on the next launch.",
+          "ko-kr": "최적화❝MOD 자체 업데이트 절차를 개선했습니다. 게임 실행 중에 파일을 교체하고, 완료 후 게임을 종료하면 다음 실행부터 새 버전이 적용됩니다.",
+          "ja-jp": "最適化❝MOD の自動更新フローを改善しました。ゲーム実行中にファイルを置き換え、完了後にゲームを終了すると次回起動から新しいバージョンが適用されます。"
+        },
         "tag": "v1.9.9-beta.1",
         "version": "1.9.9.1",
         "assets": [
@@ -534,26 +555,6 @@
           }
         ],
         "publishedAt": "2026-10-15T18:34:58Z"
-      },
-      {
-        "minResourceVersion": "1.0.0",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelogs": {
-          "zh-cn": "改进❝兼容 Unity.IMGUI.HiDPI.Patcher，保留本 MOD 自身的 DPI 适配与完整屏幕坐标，修复高分辨率下弹幕仅在左上角显示及界面、鼠标坐标受额外缩放影响的问题；ConfigurationManager 仍可正常放大，无需修改第三方配置。\n改进❝兼容 OC2HostColor 主机换位，保留双方换位入口并双向同步位置选择，避免重复交换相互抵消，不再因检测到 HostColor 而关闭本 MOD 的换位功能。\n改进❝重构一键退出：街机大厅优先调用游戏原生离开流程；加载中返回时清理匹配状态，按原版规则移除匹配加入者并保留邀请及明确选择保留的成员；主界面继续使用本 MOD 的退出与重载逻辑。\n修复❝插件配置 BepInEx/config/com.ch3ngyz.plugin.HostUtilities.cfg 保留原位，不再作为迁移目标，避免启动后重复创建；其他用户数据仍使用 BepInEx/config/OC2HostUtilities。\n改进❝切回游戏时的剪贴板加入检测支持观战链接；成功复制普通或观战邀请链接后立即记录去重，不再提示加入自己刚复制的链接。\n改进❝右上角延迟列表将“观战”放在玩家号位对应位置；观战身份与延迟仅向主机显示，不再向客机分发观战名单或延迟，常规延迟广播也跳过观战玩家。\n修复❝观战端逐次响应选档请求，主机选档阶段不再等待观战玩家，避免反复进入存档时出现 60 秒选档倒计时；后续正常加载等待保持不变。\n改进❝复制加入链接窗口补充说明：普通链接可在文件资源管理器地址栏或 Win+R 运行输入框中打开，无需安装 MOD。\n改进❝启动等待 SteamID 时增加“本次跳过”，可结束本轮等待并确认继续游戏，不写入永久跳过配置，保留身份恢复后的自动处理与手动检查。\n改进❝本地编译运行入口改用 PowerShell 7，减少旧版 PowerShell 的中文编码解析问题；自动构建固定 .NET SDK 版本并复用持久化安装目录。",
-          "en-us": "Improved❝Added compatibility with Unity.IMGUI.HiDPI.Patcher while retaining this MOD's own DPI scaling and full-screen coordinates. This fixes scrolling comments being confined to the top-left area on high-resolution displays and prevents extra scaling from distorting UI and mouse coordinates. ConfigurationManager remains enlarged without editing third-party settings.\nImproved❝Added OC2HostColor host-slot compatibility. Both slot controls remain available and synchronize their selections in both directions, preventing duplicate swaps from cancelling each other out. Detecting HostColor no longer disables this MOD's slot controls.\nImproved❝Reworked quick exit: the arcade lobby uses the game's native leave flow first; returning during loading clears matchmaking state and follows native cleanup rules to remove matchmade arrivals while keeping invited and explicitly retained members. The main menu keeps this MOD's exit and reload flow.\nFixed❝The plugin configuration stays at BepInEx/config/com.ch3ngyz.plugin.HostUtilities.cfg and is no longer a migration target, preventing repeated recreation at startup. Other user data continues to use BepInEx/config/OC2HostUtilities.\nImproved❝Clipboard join detection when returning to the game now supports spectator links. Successfully copying a normal or spectator invite link immediately records it for deduplication, so your own newly copied link no longer triggers a join prompt.\nImproved❝The top-right latency list places the spectator label in the player-slot column. Spectator identities and latency are shown only to the host; spectator lists and latency are no longer distributed to clients, and regular latency broadcasts also skip spectators.\nFixed❝Spectators now respond to each save-selection request, and the host no longer waits for spectators during save selection, preventing a 60-second selection countdown when repeatedly entering saves. Subsequent loading waits remain unchanged.\nImproved❝The copy-join-link dialog now explains that normal links can be opened in the File Explorer address bar or the Win+R Run box without installing the MOD.\nImproved❝Added a skip-for-this-session option while waiting for SteamID at startup. It ends the current wait and lets you confirm to continue playing without saving a permanent skip setting; automatic handling after identity recovery and manual checks remain available.\nImproved❝Local build-and-run entry points now use PowerShell 7 to reduce Chinese-text parsing issues in older PowerShell. Automated builds pin the .NET SDK version and reuse a persistent installation directory.",
-          "ko-kr": "개선❝Unity.IMGUI.HiDPI.Patcher와 호환되도록 개선하고, 이 MOD의 자체 DPI 조정과 전체 화면 좌표를 유지합니다. 고해상도에서 흐르는 채팅이 왼쪽 위 영역에만 표시되거나 추가 배율로 UI 및 마우스 좌표가 어긋나는 문제를 수정했습니다. 타사 설정을 변경하지 않아도 ConfigurationManager 확대는 유지됩니다.\n개선❝OC2HostColor의 호스트 슬롯 이동과 호환되도록 개선했습니다. 양쪽 조작 메뉴를 모두 유지하고 슬롯 선택을 양방향으로 동기화하여 중복 교환이 서로 상쇄되지 않도록 했습니다. HostColor가 감지되어도 이 MOD의 슬롯 이동 기능을 비활성화하지 않습니다.\n개선❝빠른 나가기 동작을 재구성했습니다. 아케이드 로비에서는 게임의 기본 나가기 절차를 우선 사용합니다. 로딩 중 돌아갈 때는 매칭 상태를 정리하고 기본 규칙에 따라 매칭 참가자를 제거하되, 초대 참가자와 명시적으로 유지한 멤버는 남깁니다. 메인 메뉴에서는 이 MOD의 기존 나가기 및 다시 불러오기 동작을 유지합니다.\n수정❝플러그인 설정 BepInEx/config/com.ch3ngyz.plugin.HostUtilities.cfg를 원래 위치에 유지하고 이전 대상에서 제외하여 시작할 때 반복 생성되지 않도록 했습니다. 다른 사용자 데이터는 계속 BepInEx/config/OC2HostUtilities를 사용합니다.\n개선❝게임으로 돌아왔을 때의 클립보드 참가 감지가 관전 링크도 지원합니다. 일반 또는 관전 초대 링크를 복사하는 데 성공하면 즉시 중복 확인 목록에 기록하여 자신이 방금 복사한 링크로 참가 안내가 뜨지 않습니다.\n개선❝오른쪽 위 지연 시간 목록에서 관전 표기를 플레이어 슬롯 번호 위치에 표시합니다. 관전자 정보와 지연 시간은 호스트에게만 표시하고 클라이언트에는 관전자 목록이나 지연 시간을 전달하지 않으며, 일반 지연 시간 전송에서도 관전자를 제외합니다.\n수정❝관전자가 각 저장 파일 선택 요청에 응답하고, 호스트의 저장 파일 선택 단계에서 관전자를 기다리지 않도록 했습니다. 반복해서 저장 파일에 들어갈 때 60초 선택 대기가 발생하는 문제를 방지하며, 이후의 정상 로딩 대기는 유지합니다.\n개선❝참가 링크 복사 창에 일반 링크는 MOD를 설치하지 않아도 파일 탐색기 주소 표시줄이나 Win+R 실행 입력창에서 열 수 있다는 설명을 추가했습니다.\n개선❝시작 시 SteamID를 기다리는 동안 이번만 건너뛰기 기능을 추가했습니다. 현재 대기를 끝내고 확인 후 게임을 계속할 수 있으며, 영구적인 건너뛰기 설정은 저장하지 않습니다. ID 복구 후 자동 처리와 수동 확인은 유지합니다.\n개선❝로컬 빌드 및 실행 진입점을 PowerShell 7로 변경하여 구형 PowerShell의 중국어 텍스트 해석 문제를 줄였습니다. 자동 빌드는 .NET SDK 버전을 고정하고 영구 설치 경로를 재사용합니다."
-        },
-        "tag": "v1.8.7.20",
-        "version": "1.8.7.20",
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 381096,
-            "sha256": "42acc7600e96b4b490e3112a853d929518e71edea519abccd7df57f84be1aa96"
-          }
-        ],
-        "publishedAt": "2026-10-15T17:51:21Z"
       }
     ]
   },
