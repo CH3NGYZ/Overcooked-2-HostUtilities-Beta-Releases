@@ -459,6 +459,27 @@
         "resourceFormat": 1,
         "forceUpdate": false,
         "changelogs": {
+          "zh-cn": "修复❝与《厨房暖暖》一起使用时的厨师状态同步冲突。\n兼容❝大厅玩家卡片的换厨师按钮支持切换《厨房暖暖》的自定义厨师，仅解锁一个原版厨师时也能切换。",
+          "en-us": "Fixed❝A chef state synchronization conflict when using DIYChef with the Arcade MOD.\nCompatible❝Lobby player-card chef buttons can cycle through DIYChef custom chefs, including when only one original chef is unlocked.",
+          "ko-kr": "수정❝아케이드 MOD와 DIYChef를 함께 사용할 때 발생하던 요리사 상태 동기화 충돌을 수정했습니다.\n호환❝대기실 플레이어 카드의 요리사 변경 버튼으로 DIYChef의 사용자 지정 요리사를 선택할 수 있으며, 기본 요리사가 하나만 잠금 해제된 경우에도 전환할 수 있습니다.",
+          "ja-jp": "修正❝アーケード MOD と DIYChef を併用した際のシェフ状態の同期競合を修正しました。\n互換❝ロビーのプレイヤーカードにあるシェフ変更ボタンで DIYChef のカスタムシェフを選択できます。通常のシェフが1人だけ解放されている場合も切り替えられます。"
+        },
+        "tag": "v2.0.0-beta.2",
+        "version": "2.0.0.2",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 412467,
+            "sha256": "b920fd9039a9fa597b7a703b50911ac2a9de64427373b051af60ce8dd36996b9"
+          }
+        ],
+        "publishedAt": "2026-11-14T05:32:19Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelogs": {
           "zh-cn": "修复❝安装 OC2RandomColor 后，街机 MOD 覆盖随机位置的问题。\n兼容❝随机位置开启时保留随机分配，关闭后恢复街机 MOD 的换位计划。",
           "en-us": "Fixed❝The Arcade MOD overwrote random positions when OC2RandomColor was installed.\nCompatible❝Random assignment is preserved while enabled, and the Arcade MOD slot plan returns when it is disabled.",
           "ko-kr": "수정❝OC2RandomColor를 설치하면 아케이드 MOD가 무작위 위치를 덮어쓰던 문제를 수정했습니다.\n호환❝무작위 위치를 켜면 무작위 배치를 유지하고, 끄면 아케이드 MOD의 자리 교체 계획을 복원합니다.",
@@ -536,26 +557,6 @@
           }
         ],
         "publishedAt": "2026-10-15T20:34:46Z"
-      },
-      {
-        "minResourceVersion": "1.0.1",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelogs": {
-          "zh-cn": "优化代码",
-          "en-us": "Code optimizations.",
-          "ko-kr": "코드 최적화."
-        },
-        "tag": "v1.8.7.22",
-        "version": "1.8.7.22",
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 377021,
-            "sha256": "20057716f5afaacd800baa9f5fe8363fe7d58a5db0d1617dce769d827c06d411"
-          }
-        ],
-        "publishedAt": "2026-10-15T19:31:18Z"
       }
     ]
   },
