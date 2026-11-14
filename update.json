@@ -459,6 +459,27 @@
         "resourceFormat": 1,
         "forceUpdate": false,
         "changelogs": {
+          "zh-cn": "新增❝房间链接旁增加“刷新房间状态”，方便加入失败后重试。\n修复❝一键退出街机后房间仍可能保留公开匹配状态的问题。\n优化❝自更新增加保底线路，连接失败时显示具体原因。",
+          "en-us": "Added❝A Refresh Room State button beside the room link to help guests retry failed joins.\nFixed❝Rooms could retain public matchmaking state after leaving Arcade with one click.\nImproved❝Self-updates now have a final fallback source and show specific connection errors.",
+          "ko-kr": "추가❝방 링크 옆에 방 상태 새로 고침 버튼을 추가하여 참가 실패 후 다시 시도할 수 있도록 했습니다.\n수정❝원클릭으로 아케이드를 나간 뒤에도 방에 공개 매칭 상태가 남을 수 있던 문제를 수정했습니다.\n개선❝자동 업데이트에 최종 대체 경로를 추가하고 연결 실패 시 구체적인 원인을 표시합니다.",
+          "ja-jp": "追加❝ルームリンクの隣にルーム状態の更新ボタンを追加し、参加に失敗したゲストの再試行を支援します。\n修正❝ワンクリックでアーケードを退出した後も、公開マッチング状態が残る場合がある問題を修正しました。\n改善❝自動更新に最終フォールバック先を追加し、接続失敗時に具体的な原因を表示します。"
+        },
+        "tag": "v2.0.0-beta.3",
+        "version": "2.0.0.3",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 415174,
+            "sha256": "437d77e00b7279e7b3e55c026ef4afb41f9cf13f512dc62fd0de4d5120960c33"
+          }
+        ],
+        "publishedAt": "2026-11-14T19:44:48Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelogs": {
           "zh-cn": "修复❝与《厨房暖暖》一起使用时的厨师状态同步冲突。\n兼容❝大厅玩家卡片的换厨师按钮支持切换《厨房暖暖》的自定义厨师，仅解锁一个原版厨师时也能切换。",
           "en-us": "Fixed❝A chef state synchronization conflict when using DIYChef with the Arcade MOD.\nCompatible❝Lobby player-card chef buttons can cycle through DIYChef custom chefs, including when only one original chef is unlocked.",
           "ko-kr": "수정❝아케이드 MOD와 DIYChef를 함께 사용할 때 발생하던 요리사 상태 동기화 충돌을 수정했습니다.\n호환❝대기실 플레이어 카드의 요리사 변경 버튼으로 DIYChef의 사용자 지정 요리사를 선택할 수 있으며, 기본 요리사가 하나만 잠금 해제된 경우에도 전환할 수 있습니다.",
@@ -537,26 +558,6 @@
           }
         ],
         "publishedAt": "2026-10-28T16:12:30Z"
-      },
-      {
-        "minResourceVersion": "1.0.3",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelogs": {
-          "zh-cn": "自定义语音包和聊天提示音改为读取 OGG Vorbis 音频，官方资源包需 1.0.3 或更新版本。\n本地已有 OGG 音效不再因资源版本声明缺失或不兼容而被禁用；资源更新和安装校验保持不变。",
-          "en-us": "Custom voice packs and chat notification sounds now use OGG Vorbis audio. Official resource packs must be version 1.0.3 or later.\nExisting local OGG audio is no longer disabled by missing or incompatible resource metadata. Resource update and installation checks remain unchanged.",
-          "ko-kr": "사용자 지정 음성 팩과 채팅 알림음이 OGG Vorbis 오디오를 사용하도록 변경되었습니다. 공식 리소스 팩은 1.0.3 이상이 필요합니다.\n리소스 버전 정보가 없거나 호환되지 않아도 기존 로컬 OGG 오디오를 사용할 수 있습니다. 리소스 업데이트 및 설치 검증은 그대로 유지됩니다."
-        },
-        "tag": "v1.8.7.23",
-        "version": "1.8.7.23",
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 378047,
-            "sha256": "288a2f8912f2f00a0c11d13f3ac76c7b80cb551b2c543ef9c0118b6686a6c5f3"
-          }
-        ],
-        "publishedAt": "2026-10-15T20:34:46Z"
       }
     ]
   },
