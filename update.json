@@ -459,6 +459,28 @@
         "resourceFormat": 1,
         "forceUpdate": false,
         "changelogs": {
+          "zh-cn": "修复❝进入自制图后返回主界面无法刷新房间状态的问题。",
+          "zh-tw": "修復❝進入自製地圖後返回主畫面無法刷新房間狀態的問題。",
+          "en-us": "Fixed❝Room state could not be refreshed after returning to the main menu from a custom level.",
+          "ko-kr": "수정❝커스텀 맵에서 메인 메뉴로 돌아온 후 방 상태를 새로 고칠 수 없던 문제를 수정했습니다.",
+          "ja-jp": "修正❝カスタムステージからメインメニューに戻った後、ルーム状態を更新できなかった問題を修正しました。"
+        },
+        "tag": "v2.0.1-beta.1",
+        "version": "2.0.1.1",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 416711,
+            "sha256": "8cbfea22ed6b0a40b0cef8ab91d59c03affdd975e3182c00090f871316f767ed"
+          }
+        ],
+        "publishedAt": "2026-11-16T07:43:04Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelogs": {
           "zh-cn": "新增❝房间链接旁增加“刷新房间状态”，方便加入失败后重试。\n修复❝一键退出街机后房间仍可能保留公开匹配状态的问题。\n优化❝自更新增加保底线路，连接失败时显示具体原因。",
           "en-us": "Added❝A Refresh Room State button beside the room link to help guests retry failed joins.\nFixed❝Rooms could retain public matchmaking state after leaving Arcade with one click.\nImproved❝Self-updates now have a final fallback source and show specific connection errors.",
           "ko-kr": "추가❝방 링크 옆에 방 상태 새로 고침 버튼을 추가하여 참가 실패 후 다시 시도할 수 있도록 했습니다.\n수정❝원클릭으로 아케이드를 나간 뒤에도 방에 공개 매칭 상태가 남을 수 있던 문제를 수정했습니다.\n개선❝자동 업데이트에 최종 대체 경로를 추가하고 연결 실패 시 구체적인 원인을 표시합니다.",
@@ -537,27 +559,6 @@
           }
         ],
         "publishedAt": "2026-10-28T17:49:51Z"
-      },
-      {
-        "minResourceVersion": "1.0.3",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelogs": {
-          "zh-cn": "优化❝MOD 自更新流程：更新在游戏运行中完成文件替换，完成后提示关闭游戏，重启后生效。",
-          "en-us": "Optimized❝The MOD self-update flow now replaces files while the game is running, then asks you to close the game so the new version loads on the next launch.",
-          "ko-kr": "최적화❝MOD 자체 업데이트 절차를 개선했습니다. 게임 실행 중에 파일을 교체하고, 완료 후 게임을 종료하면 다음 실행부터 새 버전이 적용됩니다.",
-          "ja-jp": "最適化❝MOD の自動更新フローを改善しました。ゲーム実行中にファイルを置き換え、完了後にゲームを終了すると次回起動から新しいバージョンが適用されます。"
-        },
-        "tag": "v1.9.9-beta.1",
-        "version": "1.9.9.1",
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 428209,
-            "sha256": "9a0898a54f418a0fb6a2f583da6d7f55fa762ad5bcdedd4c66acc378f1a2cc49"
-          }
-        ],
-        "publishedAt": "2026-10-28T16:12:30Z"
       }
     ]
   },
