@@ -459,6 +459,28 @@
         "resourceFormat": 1,
         "forceUpdate": false,
         "changelogs": {
+          "zh-cn": "修复大地图进入关卡的加载期间使用一键退出，返回大地图后可能一直卡在加载界面的问题。",
+          "zh-tw": "修正從世界地圖進入關卡的載入期間使用一鍵退出，返回世界地圖後可能一直停留在載入畫面的問題。",
+          "en-us": "Fixed an issue where using quick exit while loading a level from the world map could leave the game stuck on the loading screen after returning to the world map.",
+          "ko-kr": "월드맵에서 레벨을 불러오는 도중 빠른 나가기를 사용하면 월드맵으로 돌아온 뒤 로딩 화면에서 멈출 수 있는 문제를 수정했습니다.",
+          "ja-jp": "ワールドマップからステージをロード中にクイック退出すると、ワールドマップに戻った後もロード画面で止まることがある問題を修正しました。"
+        },
+        "tag": "v2.0.2-beta.3",
+        "version": "2.0.2.3",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 430809,
+            "sha256": "fb34009065a5e12919e6d0b088e6bf550e6c36d30651a24b04862444b8fe6f18"
+          }
+        ],
+        "publishedAt": "2026-11-17T19:11:22Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelogs": {
           "zh-cn": "调整一键退出逻辑，大厅、世界地图和关卡优先使用游戏原生退出，加载期间根据当前状态选择退出路径。\n修复退出过程中的房间状态清理，按原版规则保留邀请及明确保留的队友。\n优化更新检测提示，SteamID 获取最多尝试3次。",
           "zh-tw": "調整一鍵退出邏輯，大廳、世界地圖和關卡優先使用遊戲原生退出，載入期間依目前狀態選擇退出路徑。\n修正退出過程中的房間狀態清理，依原版規則保留受邀及明確設為保留的隊友。\n改善更新檢查提示，SteamID 最多嘗試取得3次。",
           "en-us": "Updated the quick-exit logic to prefer the game's native exit flow in lobbies, on world maps and in levels, selecting an available exit path while loading.\nFixed room-state cleanup during exit and retained invited players and explicitly retained teammates according to the game's rules.\nImproved update-check messages and limited SteamID retrieval to three attempts.",
@@ -540,27 +562,6 @@
           }
         ],
         "publishedAt": "2026-11-14T19:44:48Z"
-      },
-      {
-        "minResourceVersion": "1.0.3",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelogs": {
-          "zh-cn": "修复❝与《厨房暖暖》一起使用时的厨师状态同步冲突。\n兼容❝大厅玩家卡片的换厨师按钮支持切换《厨房暖暖》的自定义厨师，仅解锁一个原版厨师时也能切换。",
-          "en-us": "Fixed❝A chef state synchronization conflict when using DIYChef with the Arcade MOD.\nCompatible❝Lobby player-card chef buttons can cycle through DIYChef custom chefs, including when only one original chef is unlocked.",
-          "ko-kr": "수정❝아케이드 MOD와 DIYChef를 함께 사용할 때 발생하던 요리사 상태 동기화 충돌을 수정했습니다.\n호환❝대기실 플레이어 카드의 요리사 변경 버튼으로 DIYChef의 사용자 지정 요리사를 선택할 수 있으며, 기본 요리사가 하나만 잠금 해제된 경우에도 전환할 수 있습니다.",
-          "ja-jp": "修正❝アーケード MOD と DIYChef を併用した際のシェフ状態の同期競合を修正しました。\n互換❝ロビーのプレイヤーカードにあるシェフ変更ボタンで DIYChef のカスタムシェフを選択できます。通常のシェフが1人だけ解放されている場合も切り替えられます。"
-        },
-        "tag": "v2.0.0-beta.2",
-        "version": "2.0.0.2",
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 412467,
-            "sha256": "b920fd9039a9fa597b7a703b50911ac2a9de64427373b051af60ce8dd36996b9"
-          }
-        ],
-        "publishedAt": "2026-11-14T05:32:19Z"
       }
     ]
   },
