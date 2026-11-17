@@ -459,6 +459,28 @@
         "resourceFormat": 1,
         "forceUpdate": false,
         "changelogs": {
+          "zh-cn": "适配新版MOD设置。\n推荐删除“ConfigurationManager”，再启动游戏，按提示下载并安装新版 MOD 设置菜单。\n新的“MOD 设置菜单”入口在“厨师”选项卡内，按“波浪号”键也可以打开（ESC下面那个键）。",
+          "zh-tw": "適配新版MOD設定。\n建議刪除「ConfigurationManager」，再啟動遊戲，依照提示下載並安裝新版 MOD 設定選單。\n新的「MOD 設定選單」入口位於「廚師」分頁內，按「波浪號」鍵也可以開啟（ESC下方的按鍵）。",
+          "en-us": "Added support for the new MOD Settings menu.\nWe recommend removing ConfigurationManager, then starting the game and following the prompts to download and install the new MOD Settings menu.\nThe new MOD Settings menu is in the Chefs tab. You can also open it by pressing the tilde (~) key just below ESC.",
+          "ko-kr": "새 MOD 설정 메뉴를 지원합니다.\nConfigurationManager를 삭제한 뒤 게임을 실행하고, 안내에 따라 새 MOD 설정 메뉴를 다운로드하여 설치하는 것을 권장합니다.\n새 MOD 설정 메뉴는 요리사 탭에서 열 수 있습니다. ESC 바로 아래의 물결표(~) 키를 눌러서도 열 수 있습니다.",
+          "ja-jp": "新しいMOD設定メニューに対応しました。\nConfigurationManagerを削除してからゲームを起動し、案内に従って新しいMOD設定メニューをダウンロード・インストールすることをおすすめします。\n新しいMOD設定メニューはシェフタブ内から開けます。ESCキーの下にあるチルダ（~）キーでも開けます。"
+        },
+        "tag": "v2.0.2-beta.1",
+        "version": "2.0.2.1",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 427030,
+            "sha256": "1c7058be562cce94c683a27cfaaa02349cb2a8ebdf247afc934ac3ddfe251975"
+          }
+        ],
+        "publishedAt": "2026-11-17T11:20:17Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelogs": {
           "zh-cn": "修复❝进入自制图后返回主界面无法刷新房间状态的问题。",
           "zh-tw": "修復❝進入自製地圖後返回主畫面無法刷新房間狀態的問題。",
           "en-us": "Fixed❝Room state could not be refreshed after returning to the main menu from a custom level.",
@@ -538,27 +560,6 @@
           }
         ],
         "publishedAt": "2026-11-13T15:46:57Z"
-      },
-      {
-        "minResourceVersion": "1.0.3",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelogs": {
-          "zh-cn": "优化❝MOD 自更新流程：更新在游戏运行中完成文件替换，完成后提示关闭游戏，重启后生效。",
-          "en-us": "Optimized❝The MOD self-update flow now replaces files while the game is running, then asks you to close the game so the new version loads on the next launch.",
-          "ko-kr": "최적화❝MOD 자체 업데이트 절차를 개선했습니다. 게임 실행 중에 파일을 교체하고, 완료 후 게임을 종료하면 다음 실행부터 새 버전이 적용됩니다.",
-          "ja-jp": "最適化❝MOD の自動更新フローを改善しました。ゲーム実行中にファイルを置き換え、完了後にゲームを終了すると次回起動から新しいバージョンが適用されます。"
-        },
-        "tag": "v1.9.9-beta.2",
-        "version": "1.9.9.2",
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 408448,
-            "sha256": "1bba854c9c40699ee23ffe73abde4fbe1a28c22afddf5db1ec5053d5a27103b3"
-          }
-        ],
-        "publishedAt": "2026-10-28T17:49:51Z"
       }
     ]
   },
