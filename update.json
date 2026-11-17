@@ -459,6 +459,28 @@
         "resourceFormat": 1,
         "forceUpdate": false,
         "changelogs": {
+          "zh-cn": "调整一键退出逻辑，大厅、世界地图和关卡优先使用游戏原生退出，加载期间根据当前状态选择退出路径。\n修复退出过程中的房间状态清理，按原版规则保留邀请及明确保留的队友。\n优化更新检测提示，SteamID 获取最多尝试3次。",
+          "zh-tw": "調整一鍵退出邏輯，大廳、世界地圖和關卡優先使用遊戲原生退出，載入期間依目前狀態選擇退出路徑。\n修正退出過程中的房間狀態清理，依原版規則保留受邀及明確設為保留的隊友。\n改善更新檢查提示，SteamID 最多嘗試取得3次。",
+          "en-us": "Updated the quick-exit logic to prefer the game's native exit flow in lobbies, on world maps and in levels, selecting an available exit path while loading.\nFixed room-state cleanup during exit and retained invited players and explicitly retained teammates according to the game's rules.\nImproved update-check messages and limited SteamID retrieval to three attempts.",
+          "ko-kr": "빠른 나가기 로직을 개선하여 대기실, 월드맵, 레벨에서 게임의 기본 나가기 절차를 우선 사용하고, 로딩 중에는 현재 상태에 따라 가능한 경로를 선택합니다.\n나가는 과정의 방 상태 정리를 수정하고, 게임 기본 규칙에 따라 초대된 플레이어와 유지하도록 지정한 팀원을 유지합니다.\n업데이트 확인 안내를 개선하고 SteamID 가져오기를 최대 3회로 제한합니다.",
+          "ja-jp": "クイック退出の処理を調整し、ロビー、ワールドマップ、ステージではゲーム本来の退出処理を優先し、ロード中は現在の状態に応じて利用可能な退出経路を選択します。\n退出時のルーム状態の整理を修正し、ゲーム本来のルールに従って招待したプレイヤーと明示的に残す設定にした仲間を維持します。\n更新確認の表示を改善し、SteamIDの取得を最大3回に制限します。"
+        },
+        "tag": "v2.0.2-beta.2",
+        "version": "2.0.2.2",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 430430,
+            "sha256": "f178730a568a6481944fdbc97278d553e76522db3650a03073cc80065ea7ea33"
+          }
+        ],
+        "publishedAt": "2026-11-17T18:00:23Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelogs": {
           "zh-cn": "适配新版MOD设置。\n推荐删除“ConfigurationManager”，再启动游戏，按提示下载并安装新版 MOD 设置菜单。\n新的“MOD 设置菜单”入口在“厨师”选项卡内，按“波浪号”键也可以打开（ESC下面那个键）。",
           "zh-tw": "適配新版MOD設定。\n建議刪除「ConfigurationManager」，再啟動遊戲，依照提示下載並安裝新版 MOD 設定選單。\n新的「MOD 設定選單」入口位於「廚師」分頁內，按「波浪號」鍵也可以開啟（ESC下方的按鍵）。",
           "en-us": "Added support for the new MOD Settings menu.\nWe recommend removing ConfigurationManager, then starting the game and following the prompts to download and install the new MOD Settings menu.\nThe new MOD Settings menu is in the Chefs tab. You can also open it by pressing the tilde (~) key just below ESC.",
@@ -539,27 +561,6 @@
           }
         ],
         "publishedAt": "2026-11-14T05:32:19Z"
-      },
-      {
-        "minResourceVersion": "1.0.3",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelogs": {
-          "zh-cn": "修复❝安装 OC2RandomColor 后，街机 MOD 覆盖随机位置的问题。\n兼容❝随机位置开启时保留随机分配，关闭后恢复街机 MOD 的换位计划。",
-          "en-us": "Fixed❝The Arcade MOD overwrote random positions when OC2RandomColor was installed.\nCompatible❝Random assignment is preserved while enabled, and the Arcade MOD slot plan returns when it is disabled.",
-          "ko-kr": "수정❝OC2RandomColor를 설치하면 아케이드 MOD가 무작위 위치를 덮어쓰던 문제를 수정했습니다.\n호환❝무작위 위치를 켜면 무작위 배치를 유지하고, 끄면 아케이드 MOD의 자리 교체 계획을 복원합니다.",
-          "ja-jp": "修正❝OC2RandomColor を導入するとアーケード MOD がランダムな位置を上書きする問題を修正しました。\n互換❝ランダム位置が有効な間はランダムな割り当てを保ち、無効にするとアーケード MOD の交換計画を復元します。"
-        },
-        "tag": "v2.0.0-beta.1",
-        "version": "2.0.0.1",
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 409655,
-            "sha256": "eaca61256a8de9096c2a6487ad87f95c7f3a11a5137ff924cd77e91cb76ac79d"
-          }
-        ],
-        "publishedAt": "2026-11-13T15:46:57Z"
       }
     ]
   },
