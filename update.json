@@ -459,6 +459,28 @@
         "resourceFormat": 1,
         "forceUpdate": false,
         "changelogs": {
+          "zh-cn": "修复主菜单一键退出无响应的问题：客机可以退房，主机可以解散房间。",
+          "zh-tw": "修正主選單一鍵退出沒有反應的問題：客機可以離開房間，主機可以解散房間。",
+          "en-us": "Fixed Quick Exit in the main menu so that clients can leave the lobby and hosts can disband it.",
+          "ko-kr": "메인 메뉴에서 빠른 나가기가 작동하지 않던 문제를 수정했습니다. 이제 게스트는 방을 나갈 수 있고, 호스트는 방을 해산할 수 있습니다.",
+          "ja-jp": "メインメニューでクイック退出が反応しない問題を修正しました。ゲストはルームから退出でき、ホストはルームを解散できます。"
+        },
+        "tag": "v2.0.3-beta.1",
+        "version": "2.0.3.1",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 432131,
+            "sha256": "747fbc1f8caed51a13c7e66b6261f738b5e40707a427173c529f783a8c008a94"
+          }
+        ],
+        "publishedAt": "2026-11-19T17:52:56Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelogs": {
           "zh-cn": "修复大地图进入关卡的加载期间使用一键退出，返回大地图后可能一直卡在加载界面的问题。",
           "zh-tw": "修正從世界地圖進入關卡的載入期間使用一鍵退出，返回世界地圖後可能一直停留在載入畫面的問題。",
           "en-us": "Fixed an issue where using quick exit while loading a level from the world map could leave the game stuck on the loading screen after returning to the world map.",
@@ -541,27 +563,6 @@
           }
         ],
         "publishedAt": "2026-11-16T07:43:04Z"
-      },
-      {
-        "minResourceVersion": "1.0.3",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelogs": {
-          "zh-cn": "新增❝房间链接旁增加“刷新房间状态”，方便加入失败后重试。\n修复❝一键退出街机后房间仍可能保留公开匹配状态的问题。\n优化❝自更新增加保底线路，连接失败时显示具体原因。",
-          "en-us": "Added❝A Refresh Room State button beside the room link to help guests retry failed joins.\nFixed❝Rooms could retain public matchmaking state after leaving Arcade with one click.\nImproved❝Self-updates now have a final fallback source and show specific connection errors.",
-          "ko-kr": "추가❝방 링크 옆에 방 상태 새로 고침 버튼을 추가하여 참가 실패 후 다시 시도할 수 있도록 했습니다.\n수정❝원클릭으로 아케이드를 나간 뒤에도 방에 공개 매칭 상태가 남을 수 있던 문제를 수정했습니다.\n개선❝자동 업데이트에 최종 대체 경로를 추가하고 연결 실패 시 구체적인 원인을 표시합니다.",
-          "ja-jp": "追加❝ルームリンクの隣にルーム状態の更新ボタンを追加し、参加に失敗したゲストの再試行を支援します。\n修正❝ワンクリックでアーケードを退出した後も、公開マッチング状態が残る場合がある問題を修正しました。\n改善❝自動更新に最終フォールバック先を追加し、接続失敗時に具体的な原因を表示します。"
-        },
-        "tag": "v2.0.0-beta.3",
-        "version": "2.0.0.3",
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 415174,
-            "sha256": "437d77e00b7279e7b3e55c026ef4afb41f9cf13f512dc62fd0de4d5120960c33"
-          }
-        ],
-        "publishedAt": "2026-11-14T19:44:48Z"
       }
     ]
   },
